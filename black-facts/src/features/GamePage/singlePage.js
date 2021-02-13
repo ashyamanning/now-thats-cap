@@ -2,8 +2,9 @@ import React from 'react';
 
 const SinglePage = () => {
     return (
-        <div>
-            
+        <div className=''>
+        
+
         </div>
     )
 }
