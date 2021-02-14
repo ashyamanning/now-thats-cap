@@ -1,5 +1,5 @@
 import React from 'react';
-import categoryData from './Data/categoryData';
+import categoryData from '../../data/categoryData';
 import { Link } from 'react-router-dom';
 import './Css/categories.css'
 
