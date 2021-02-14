@@ -1,13 +1,13 @@
 import React from 'react'
 
-const MenuButton = () => {
+const MenuButton = ({ description }) => {
 
-
-    return (
-        <button>
-
-        </button>
-    )
+  return (
+    <button type="button" class="btn btn-primary btn-lg btn-block">
+      {description.type}
+      <p>{description.description}</p>
+      </button>
+  )
 }
 
 export default MenuButton
