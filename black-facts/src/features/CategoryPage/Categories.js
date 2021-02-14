@@ -1,5 +1,5 @@
 import React from 'react';
-import Catgories from './Categories';
+// import Catgories from './Categories';
 
 import categoryData from './Data/categoryData';
 
