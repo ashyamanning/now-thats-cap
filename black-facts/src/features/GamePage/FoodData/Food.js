@@ -48,9 +48,7 @@ export const Food = [
         answer:'Jerk Chicken',
         region:'Jamaica',
         description:`The cuisine had its origins with the Taino, who developed the jerk method and later taught
-                    it to African slaves, who in turn adapted it in creating jerk chicken.The word jerk 
-                    reportedly stems from the Spanish charqui, meaning dried strips of meat similar to the 
-                    modern-day jerky.`
+                    it to African slaves, who in turn adapted it in creating jerk chicken.`
     },
 ]
 export default Food
