@@ -1,25 +1,26 @@
 import React from 'react';
-import RandomizeBtn from './RandomizeBtn';
 import Categories from './Categories';
+import RandomizeBtn from './RandomizeBtn';
+import './Css/categoryhome.css'
 
 
 const CategoryHome = () => {
 
 
     return (
-        <div>
-            <div>
+        <div className="catHomeMain">
 
+            <div className="catHomeLogoDiv">
+                <h1 className="catHomeLogo"> #NowThatsCap</h1>
             </div>
 
-            <div>
-
-            </div>
-
-            <div>
+            <div className="catHomeCat">
                 <Categories/>
             </div>
-            
+
+            <div className="catHomeRandBtn">
+                <RandomizeBtn/>
+            </div>
         </div>
     )
 }

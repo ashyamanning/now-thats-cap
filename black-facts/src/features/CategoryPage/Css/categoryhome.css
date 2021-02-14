@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+.catHomeMain {
+    /* background-color: royalblue; */
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.catHomeLogoDiv {
+    /* background-color: seagreen; */
+    width: 100vw;
+    height: 24vh;
+    margin-top: 10%;
+    margin-bottom: -5%;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+
+.catHomeLogo {
+    font-size: 80px; 
+}
+
+.catHomeCat {
+    /* background-color: saddlebrown; */
+    height: 28vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    text-align: center
+
+}
+
+.catHomeRandBtn {
+    /* background-color: salmon; */
+    height: 20vh;
+}
