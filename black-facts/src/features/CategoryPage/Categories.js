@@ -1,20 +1,22 @@
 import React from 'react';
-import Catgories from './Categories';
-
 import categoryData from './Data/categoryData';
+import { Link } from 'react-router-dom';
+import './Css/categories.css'
 
 const Categories = () => {
     return (
-        <div>
-            <div> 
-                <ul>
-                    {categoryData.map((item, index) => (
-                        <button to={item.link} key={index}>
-                            {item.title}
+        <div className="categoriesMain">
+            <ul className="categoriesUL">
+                {categoryData.map((item, index) => (
+                    <li className="categoriesLI">
+                        <button className="catBtn">
+                            <Link className="catLink" type="button" to={item.link} key={index}>
+                                {item.title}
+                            </Link>
                         </button>
-                    ))}
-                </ul>
-            </div>   
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }

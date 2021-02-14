@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+.categoriesMain {
+    background-color: silver;
+    height: 100%;
+    align-items: center;
+}
+
+.categoriesUL {
+    
+}
+
+.categoriesLI {
+    list-style: none;
+}
+
+.catBtn {
+    background-color: purple;
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 400px;
+    height: 200px;
+}
+
+.catLink {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 400px;
+    height: 200px;
+    font-size: 80px;
+}
