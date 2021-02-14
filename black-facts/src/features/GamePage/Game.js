@@ -2,7 +2,11 @@ import React from 'react';
 import SingleCard from './SingleCard';
 
 const Game = () => {
-    <SingleCard/>
+    return (
+        <div>
+            <SingleCard/>
+        </div>
+    )
 }
 
 export default Game;

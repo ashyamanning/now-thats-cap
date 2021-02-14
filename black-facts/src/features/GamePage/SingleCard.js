@@ -1,7 +1,9 @@
 import React from 'react';
 import Food from './FoodData/Food';
+import ReactCardFlip from 'react-card-flip';
 
 const SingleCard = () => {
+     
     return (
         <div className='single-page'>
             <div className='question-card'>
@@ -14,7 +16,7 @@ const SingleCard = () => {
                 {Food.map((item, index) => {
                     return(
                         <div className='item'>
-                            <img src={item.image} alt='img1'/>
+                            <img src={item.image} alt='img1' width='200px'/>
                             <h3>{item.name}</h3>
                             <p>{item.region}</p>
                             <p>{item.description}</p>
