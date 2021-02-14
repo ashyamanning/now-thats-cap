@@ -1,4 +1,4 @@
-export const Food = [
+export const foodData = [
     {   id: 1,
         type:'multiple choice',
         question:`Any idea what this iconic Moroccan dish is called?`,
@@ -51,4 +51,4 @@ export const Food = [
                     it to African slaves, who in turn adapted it in creating jerk chicken.`
     },
 ]
-export default Food
+export default foodData;
