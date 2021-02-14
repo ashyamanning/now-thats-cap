@@ -1,5 +1,5 @@
 import React from 'react';
-import Food from './FoodData/Food';
+import foodData from '../../data/foodData';
 import ReactCardFlip from 'react-card-flip';
 
 const SingleCard = () => {
@@ -13,7 +13,7 @@ const SingleCard = () => {
 
             </div>
             <div className='info-card'>
-                {Food.map((item, index) => {
+                {foodData.map((item, index) => {
                     return(
                         <div className='item'>
                             <img src={item.image} alt='img1' width='200px'/>
