@@ -8,14 +8,20 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.21.1",
+<<<<<<< HEAD
+    "dom": "0.0.3",
+=======
     "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
+>>>>>>> b7c8d429a9f11b1bc7dbb20beb1c9dc0a71e3745
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
+    "react-card-flip": "^1.0.11",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.2"
+    "react-scripts": "4.0.2",
+    "redux": "^4.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
