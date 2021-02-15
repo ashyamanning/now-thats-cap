@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
 import {useHistory} from 'react-router-dom'
+import {useDispatch} from 'react-redux'
 
 const SoloTeamNameForm = () => {
-
+    const dispatch = useDispatch()
+    const history = useHistory()
     // local state variables
     const [teamName, setTeamName] = useState("")
-    
     const handleSubmit = (e) => {
         e.preventDefault()
         // send to slice of state
@@ -23,7 +24,7 @@ const SoloTeamNameForm = () => {
             </div>
             <div className="modal-body">
               <form onSubmit={handleSubmit}>
-              <input className="form-control soloNameInput" type="text" placeholder="Player Name"/>
+              <input className="form-control soloNameInput" type="text" placeholder="Player Name" value={teamName} onChange={(e) => setTeamName(e.target.value)}/>
               </form>
             </div>
             <div className="modal-footer">
