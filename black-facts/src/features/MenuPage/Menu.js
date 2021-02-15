@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import MenuButton from './MenuButton'
+import SoloTeamNameForm from './SoloTeamNameForm'
 import '../MenuPage/css/menu.css'
 
 const Menu = () => {
@@ -23,7 +24,7 @@ const Menu = () => {
                     MAIN MENU
                 </h1>
             
-                <div className="buttonDiv">
+                <div className="buttonDiv" data-toggle="modal" data-target="#exampleModalCenter">
                     <MenuButton description={soloDescription}/>
                 </div>
                 <div className="buttonDiv">
@@ -31,6 +32,7 @@ const Menu = () => {
                 </div>
             
             </div>
+            <SoloTeamNameForm />
         </div>
     )
 }
