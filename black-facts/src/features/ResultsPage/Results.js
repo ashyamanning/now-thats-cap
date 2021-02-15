@@ -1,39 +1,48 @@
 import React from "react";
 import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
 import { makeStyles } from "@material-ui/core/styles";
+import "../CategoryPage/Css/results.css"
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    // justifyContent: 'center',
-    alignContent: 'center',
-    justifyContent: 'space-around',
-    paddingTop: '10%',
+    width: '640px',
+    height: '480px',
     '& > *': {
-      width: theme.spacing(80),
-      height: theme.spacing(60),
+      margin: theme.spacing(4),
     },
   },
 }));
 
-
-
 export default function Results(props) {
-
   const classes = useStyles();
-    return (
-      <div className={classes.root}>
-      <Paper elevation={3} >
-        <Paper elevation={10}>
-          <h2>Winner is: Test</h2>
+  return (
+    <div className="results_container">
+      <Paper elevation={4} className="result">
+
+        <Paper elevation={10} className="winner_scores">
+          <div className="display_winners">
+            <h2 className="winner_score_text">Winner is: Test</h2>
+          </div>
+          <div className="display_winners">
+            <h2 className="winner_score_text">Score: Test</h2>
+          </div>
         </Paper>
-        <Paper elevation={3}>
-          <h2>What can Be</h2>
-        </Paper>
+        <div className="button-div">
+          <div className="button-div">
+            <Button variant="contained" color="primary" className="results_button">
+              New Game
+          </Button>
+          </div>
+          <div className="button-div">
+            <Button variant="contained" color="primary" className="results_button">
+              New Category
+          </Button>
+          </div>
+        </div>
       </Paper>
     </div>
+
   )
-  
 }
 
