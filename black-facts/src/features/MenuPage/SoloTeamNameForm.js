@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {useHistory} from 'react-router-dom'
 import {useDispatch} from 'react-redux'
+import {addName} from './playerNameSlices/soloTeamNameSlice'
 
 const SoloTeamNameForm = () => {
     const dispatch = useDispatch()
@@ -9,6 +10,8 @@ const SoloTeamNameForm = () => {
     const [teamName, setTeamName] = useState("")
     const handleSubmit = (e) => {
         e.preventDefault()
+        dispatch(addName(teamName))
+        history.push("/categories")
         // send to slice of state
         // push to game screen
     }
