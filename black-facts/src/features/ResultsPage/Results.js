@@ -2,7 +2,7 @@ import React from "react";
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from "@material-ui/core/styles";
-import "../CategoryPage/Css/results.css"
+import "../ResultsPage/Css/results.css"
 
 const useStyles = makeStyles((theme) => ({
   root: {
