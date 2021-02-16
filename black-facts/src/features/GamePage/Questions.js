@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-
+import Answer from './Answer'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -24,6 +24,8 @@ const useStyles = makeStyles((theme) => ({
 export default function Questions() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+  const [flip, setFlip] = useState(false)
+  const [selectOption, setSelectOption] = useState('')
 
   const handleOpen = () => {
     setOpen(true);
@@ -31,14 +33,24 @@ export default function Questions() {
 
   const handleClose = () => {
     setOpen(false);
-  };
+  }; 
 
+  const handleChange = (e) => {
+    setSelectOption(e.target.value)
+    console.log('choice', e.target.value)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+     alert(`Submitting Name ${selectOption}`)
+
+  }
 
   return (
     
-    <div>
+    <div className='question'>
       <button type="button" onClick={handleOpen}>
-        react-transition-group
+        <label># BLACKFACTS</label>
       </button>
       <Modal
         aria-labelledby="transition-modal-title"
@@ -55,20 +67,35 @@ export default function Questions() {
         <Fade in={open}>
           <div className={classes.paper}>
               {console.log(foodData[0].question)}
+              
                 <h2 id="transition-modal-title">{foodData[0].question}</h2>
-                <div>
+                <img src={foodData[0].image} width='300px'/>
+                
+                <div className='multiple-choice'>
                   {foodData[0].options.map((item, i) => {
                     return (
-                      <div> 
-                        <p>{item}</p>
+                      <div className='options' key={item.id}> 
+                        <form onSubmit={handleSubmit}>
+                          <div className="form-check form-check-inline">
+                            <input className="form-check-input"
+                                   type="radio" 
+                                    name="inlineRadioOptions"
+                                    id="inlineRadio1" 
+                                    value={item}
+                                    onChange={handleChange}
+                                    checked={selectOption === item}
+                                    />
+                            <label className="form-check-label" for="inlineRadio1">{item}</label>
+                          </div>
+                        </form>
                       </div>
                     )
                   })}
                 </div>
-              
-      
-            
-            {/* <p id="transition-modal-description">react-transition-group animates me.</p> */}
+                <div type="button" onClick={()=> setFlip(!flip)}>
+                 
+                  {flip ? <Answer/> : foodData[0].question}
+                </div>
           </div>
         </Fade>
       </Modal>

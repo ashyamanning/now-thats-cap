@@ -29,19 +29,21 @@
   margin: 0 10%;
 }
 
-.button-div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 8%;
-}
-
-.results_button {
-  margin: 10px;
-  width: 154px;
-}
-
 .winner_score_text {
   text-align: start;
   margin: 6%;
 }
+
+.buttonDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: -webkit-fill-available;
+  margin: 4%;
+}
+
+.results_button {
+  margin-top: unset;
+  margin: 4%;
+}
+

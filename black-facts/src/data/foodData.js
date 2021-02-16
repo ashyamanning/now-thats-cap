@@ -1,11 +1,11 @@
 export const foodData = [
     {   id: 1,
         type:'multiple choice',
-        question:`Any idea what this iconic Moroccan dish is called?`,
+        question:`Any idea what this iconic North African dish is called?`,
         options: ['mash potatoes', 'Msemen', 'Couscous', 'rice'],
         image:'https://images.squarespace-cdn.com/content/v1/5a78789b0abd0477ecb34736/1550257349854-A7W66FJY372Q2YLIML6C/ke17ZwdGBToddI8pDm48kNUugwwuc8oxmCFwOlQZG-17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0ivq7Q1ckvJa8MA8qNUlEOYzgjBVJ3VqhV9uPLWTMbi_JSMzt_FXMIclB8TLB5Aqfw/Couscous.jpg?format=1500w',
         answer: 'Couscous',
-        region: 'Morocco',
+        region: 'North Africa',
         description: `This traditional Maghrebi dish is typically made and eaten on a particular 
                         day of the week (or for special occasions).`
     },
