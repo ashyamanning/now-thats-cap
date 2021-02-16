@@ -1,10 +1,18 @@
+:root {
+    --darkblue: #001524;
+    --seagreen: #15616D;
+    --tan: #FFECD1;
+    --orange: #FF7D00;
+    --burgandy: #78290F;
+}
+
 .buttonDiv {
     margin: 10px;
 }
 
-.menuCard {
+.aboutUsContainer {
+    margin-top: 15px;
 }
-
 .menuPage {
     height: 100vh;
 }
