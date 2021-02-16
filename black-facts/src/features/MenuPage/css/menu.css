@@ -1,3 +1,21 @@
 .buttonDiv {
     margin: 10px;
 }
+
+.menuCard {
+}
+
+.menuPage {
+    height: 100vh;
+}
+
+.cardContainer {
+    padding: 10px;
+}
+
+@media(max-width: 700px) {
+    .menuCard { 
+      flex: 1 0 100%;
+      margin-bottom: 10px;
+    }
+  }
