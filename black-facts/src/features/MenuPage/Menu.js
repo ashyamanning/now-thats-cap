@@ -64,7 +64,13 @@ const Menu = () => {
                     <div className="container aboutUsContainer">
                     <div className="jumbotron aboutUs justify-content-center">
                         <h1 className="display-4">ABOUT US</h1>
-                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                        <ul>
+                            <li className="aboutMeList">Tech Lead: Ashya Manning</li>
+                            <li className="aboutMeList">UI/UX Manager: Uduakabasi Abasiurua</li>
+                            <li className="aboutMeList">PR Manager: Sihame Bazi</li>
+                            <li className="aboutMeList">PR Manager: Johanne Enama</li>
+                            <li className="aboutMeList">Project Manager: Marvin Thompson</li>
+                        </ul>
                         <p className="lead">
                         <div className="jumboButtonDiv">
                         <a className="btn btn-primary btn-lg btn-block" href="#" role="button" onClick={() => history.push('/')}>Back to home</a>

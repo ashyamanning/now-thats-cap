@@ -13,6 +13,10 @@
 .aboutUsContainer {
     margin-top: 15px;
 }
+
+.aboutMeList {
+    list-style: none;
+}
 .menuPage {
     height: 100vh;
 }
