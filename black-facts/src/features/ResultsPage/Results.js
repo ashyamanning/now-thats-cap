@@ -1,8 +1,8 @@
 import React from "react";
 import Paper from '@material-ui/core/Paper';
-import Button from '@material-ui/core/Button';
 import { makeStyles } from "@material-ui/core/styles";
 import "../ResultsPage/Css/results.css"
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,11 +15,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Results(props) {
+  const history = useHistory();
+  const handleNewGame = () => {
+    history.push("/menu")
+  }
   const classes = useStyles();
   return (
     <div className="results_container">
       <Paper elevation={4} className="result">
-
         <Paper elevation={10} className="winner_scores">
           <div className="display_winners">
             <h2 className="winner_score_text">Winner is: Test</h2>
@@ -30,14 +33,12 @@ export default function Results(props) {
         </Paper>
         <div className="button-div">
           <div className="button-div">
-            <Button variant="contained" color="primary" className="results_button">
-              New Game
-          </Button>
-          </div>
-          <div className="button-div">
-            <Button variant="contained" color="primary" className="results_button">
-              New Category
-          </Button>
+          <button type="button" class="btn btn-primary btn-lg btn-block" onClick={handleNewGame}>
+            <p>New Game</p>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-block">
+            <p>New Category</p>
+          </button>
           </div>
         </div>
       </Paper>
