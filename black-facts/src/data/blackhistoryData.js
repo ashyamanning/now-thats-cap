@@ -489,14 +489,14 @@ export const blackhistoryData = [
     options: ['True', 'False'],
     image:'https://i.pinimg.com/originals/02/28/58/0228587f738b075c1aaa96285139a7d0.jpg',
     answer: 'False',
-    description: `Jackie Robinson`
+    description: `Jack Roosevelt Robinson was born in Cairo, Georgia in 1919 to a family of sharecroppers. His mother, Mallie Robinson, single-handedly raised Jackie and her four other children. They were the only black family on their block, and the prejudice they encountered only strengthened their bond. From this humble beginning would grow the first baseball player to break Major League Baseball's color barrier that segregated the sport for more than 50 years.`
   },
   {
     id: 9,
     type: 'true or false',
-    question: `The laws that say we are all free and all have privileges is the cil rights.`,
+    question: `The laws that say we are all free and all have privileges is the civil rights.`,
     options: ['True', 'False'],
-    // image:'https://',
+    image:'https://thumbs-prod.si-cdn.com/_x4zSxhsCPlh58IypG2kS0RmkWs=/fit-in/1600x0/https://public-media.si-cdn.com/filer/66/ac/66acce1a-1960-4b2a-8af0-613703aab32f/lyndon_johnson_signing_civil_rights_act_july_2_1964.jpg',
     answer: 'True',
   },
   {
@@ -504,42 +504,46 @@ export const blackhistoryData = [
     type: 'true or false',
     question: `Having morals is the integrity and do the right thing`,
     options: ['True', 'False'],
-    // image:'https://',
+    image:'https://assets.nst.com.my/images/articles/workmatter6320_NSTfield_image_socialmedia.var_1583424021.jpg',
     answer: 'True',
-    description: ``
+    description: `Have the courage to say no. Have the courage to face the truth. Do the right thing because it is right. These are the magic keys to living your life with integrity.
+    W. Clement Stone`
   },
   {
     id: 11,
     type: 'true or false',
     question: `Martin Luther King, Jr is the young men staged a "sit-in" at the Woolworth lunch counter on February 1, 1960.`,
     options: ['True', 'False'],
-    // image:'https://',
+    image:'http://www.radiohc.cu/articles/1813-h10-saturday-marks-60th-anniversary-historic-greensboro-four-sit-in.jpg',
     answer: 'False',
-    description: `The Greensboro 4`
+    description: `The Greensboro 4. On February 1, 1960, four freshmen students at North Carolina’s A&T State University -- Ezell Blair Jr., Franklin McCain, Joseph McNeil and David Richmond -- refused to leave the whites-only lunch counter after being denied service.  Their action inspired a nationwide wave of sit-ins aimed at desegregating businesses and public spaces. 
+
+    Within weeks of their action, sit-in protests spread to over 250 cities and towns across the United States, sparking a nationwide movement that saw more than 400 protests by the end of the year.`
   },
   {
     id: 12,
     type: 'true or false',
     question: `Martin Luther King, Jr. was the civil rights leader used non-violent methods like marches and boycotts to gain support for equal rights for all.`,
     options: ['True', 'False'],
-    // image:'https://',
+    image:'https://www.biography.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTYxMTM3MjAxOTEwOTE2NjEw/1_martin-luther-king-jr-delivers-a-speech-to-a-crowd-of-approximately-7000-people-on-may-17-1967-at-uc-berkeleys-sproul-plaza-in-berkeley-california-photo-by-michael-ochs-archivesgetty-images.jpg',
     answer: 'True',
+    description: `The civil rights movement was a struggle for justice and equality for African Americans that took place mainly in the 1950s and 1960s. It was led by people like Martin Luther King Jr., Malcolm X, the Little Rock Nine and many others. `
   },
   {
     id: 13,
     type: 'true or false',
     question: `Rosa Parks became famous because she was the first black woman elected as governor.`,
     options: ['True', 'False'],
-    // image:'https://',
+    image:'https://www.tampabay.com/resizer/inanQ44XsTiUD1ym7isj9UzPM60=/1600x900/smart/arc-anglerfish-arc2-prod-tbt.s3.amazonaws.com/public/372JH2GG3EI6TBKNIBWI6S7HAY.jpg',
     answer: 'false',
-    description: `Rosa Parks became famous because she refused to give up her seat on the bus for a white man.`
+    description: `Rosa Parks was a civil rights activist who refused to surrender her seat to a white passenger on a segregated bus in Montgomery, Alabama. Her defiance sparked the Montgomery Bus Boycott. Its success launched nationwide efforts to end racial segregation of public facilities.`
   },
   {
     id: 14,
     type: 'true or false',
     question: `The "I Have a Dream" speech was given in Washington, D.C., by Frederick Douglass`,
     options: ['True', 'False'],
-    // image:'https://',
+    image:'https://www.wmcactionnews5.com/resizer/TmEsLpAHeftORnUdawEifncsqy8=/1200x600/arc-anglerfish-arc2-prod-raycom.s3.amazonaws.com/public/BQHZ7YEXLNDSLEAJO6UGHZ6IW4.png',
     answer: 'False',
     description: `The "I Have a Dream" speech was given in Washington, D.C., by Martin Luther King, Jr.`
   },
@@ -548,7 +552,7 @@ export const blackhistoryData = [
     type: 'true or false',
     question: `Fredrick Douglass was a former slave who bought a large plantation after the Civil War.`,
     options: ['True', 'False'],
-    // image:'https://',
+    image:'https://d279m997dpfwgl.cloudfront.net/wp/2018/02/0214_douglass-1000x667.jpg',
     answer: 'False',
     description: `Fredrick Douglass was a former slave who was an adviser to President Lincoln and helped end slavery.`
   },
