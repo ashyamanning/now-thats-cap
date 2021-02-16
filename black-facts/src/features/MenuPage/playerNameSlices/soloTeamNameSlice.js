@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 export const soloTeamNameSlice = createSlice({
     name: "soloTeamName",
-    initialState: "",
+    initialState: null,
     reducers: {
         addName: (state, action) => {
             return action.payload
