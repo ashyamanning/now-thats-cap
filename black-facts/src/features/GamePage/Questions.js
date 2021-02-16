@@ -25,6 +25,7 @@ export default function Questions() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [flip, setFlip] = useState(false)
+  const [selectOption, setSelectOption] = useState('')
 
   const handleOpen = () => {
     setOpen(true);
@@ -32,7 +33,17 @@ export default function Questions() {
 
   const handleClose = () => {
     setOpen(false);
-  };
+  }; 
+
+  const handleChange = (e) => {
+    setSelectOption(e.target.value)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+     alert(`Submitting Name ${selectOption}`)
+
+  }
 
   return (
     
@@ -58,11 +69,24 @@ export default function Questions() {
               
                 <h2 id="transition-modal-title">{foodData[0].question}</h2>
                 <img src={foodData[0].image} width='300px'/>
-                <div>
+                
+                <div className='multiple-choice'>
                   {foodData[0].options.map((item, i) => {
                     return (
                       <div className='options' key={item.id}> 
-                        <p>{item}</p>
+                        <form onSubmit={handleSubmit}>
+                          <div className="form-check form-check-inline">
+                            <input className="form-check-input"
+                                   type="radio" 
+                                    name="inlineRadioOptions"
+                                    id="inlineRadio1" 
+                                    value={item}
+                                    onChange={handleChange}
+                                    checked={selectOption === item}
+                                    />
+                            <label className="form-check-label" for="inlineRadio1">{item}</label>
+                          </div>
+                        </form>
                       </div>
                     )
                   })}
