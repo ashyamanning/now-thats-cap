@@ -1,8 +1,8 @@
 import React from "react";
 import Paper from '@material-ui/core/Paper';
-import Button from '@material-ui/core/Button';
 import { makeStyles } from "@material-ui/core/styles";
 import "../ResultsPage/Css/results.css"
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,11 +15,24 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Results(props) {
-  const classes = useStyles();
+  const history = useHistory();
+  // const classes = useStyles();
+
+  const handleNewGame = () => {
+    history.push("/menu")
+  };
+
+  const handleNewCategories = () => {
+    history.push("/categories")
+  }
+
+  const handleClose = () => {
+    history.push("/")
+  }
+
   return (
     <div className="results_container">
       <Paper elevation={4} className="result">
-
         <Paper elevation={10} className="winner_scores">
           <div className="display_winners">
             <h2 className="winner_score_text">Winner is: Test</h2>
@@ -28,17 +41,22 @@ export default function Results(props) {
             <h2 className="winner_score_text">Score: Test</h2>
           </div>
         </Paper>
-        <div className="button-div">
-          <div className="button-div">
-            <Button variant="contained" color="primary" className="results_button">
-              New Game
-          </Button>
+        <div className="buttonDiv row" >
+          <div className="col">
+          <button type="button" class="btn btn-primary btn-lg btn-block results_button" onClick={handleNewGame}>
+            New Game
+          </button>
           </div>
-          <div className="button-div">
-            <Button variant="contained" color="primary" className="results_button">
-              New Category
-          </Button>
+          <div className="col">
+          <button type="button" class="btn btn-primary btn-lg btn-block results_button" onClick={handleNewCategories}>
+            New categories
+          </button>
           </div>
+        </div>
+        <div className="closeGame-div">
+          <button type="button" class="btn btn-primary btn-lg btn-block results_button" onClick={handleClose}>
+            Exit Game
+          </button>
         </div>
       </Paper>
     </div>
