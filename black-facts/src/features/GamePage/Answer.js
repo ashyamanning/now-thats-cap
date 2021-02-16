@@ -1,19 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import foodData from '../../data/foodData'
 
 export default function Answer() {
+  const [answer, setAnswer] = useState()
+  console.log(foodData[0])
   return (
     <div>
-       {foodData.map((item, index) => {
-                    return(
-                        <div className='item'>
-                            <img src={item.image} alt='img1' width='200px'/>
-                            <h3>Answer: {item.answer}</h3>
-                            <p>Region: {item.region}</p>
-                            <h4>Did you Know:</h4>  
-                            <p>{item.description}</p>
-                        </div>
-                    )
-                })}
+      <h3>Answer: {foodData[0].answer}</h3>
+      <p>Region: {foodData[0].region}</p>
+      <h4>Did you Know:</h4>  
+      <p>{foodData[0].description}</p>
     </div>
   );
 }
