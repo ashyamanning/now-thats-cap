@@ -37,6 +37,7 @@ export default function Questions() {
 
   const handleChange = (e) => {
     setSelectOption(e.target.value)
+    console.log('choice', e.target.value)
   }
 
   const handleSubmit = (e) => {
