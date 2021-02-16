@@ -40,7 +40,7 @@ const MultiplayerTeamNameForm = () => {
               <form onSubmit={handleSubmit}>
               <input className="form-control soloNameInput" type="text" placeholder="Player Name 1" value={teamName1} onChange={(e) => setTeamName1(e.target.value)} required/>
             <div className="modal-footer">
-              <button type="submit" className="btn btn-primary">Submit</button>
+              <button type="submit" className="btn btn-primary formSubmitButton">Submit</button>
             </div>
               </form>
             </div>
