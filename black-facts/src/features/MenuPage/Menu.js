@@ -73,7 +73,7 @@ const Menu = () => {
                         </ul>
                         <p className="lead">
                         <div className="jumboButtonDiv">
-                        <a className="btn btn-primary btn-lg btn-block" href="#" role="button" onClick={() => history.push('/')}>Back to home</a>
+                        <a className="btn btn-primary btn-lg btn-block backToHomeMenu" href="#" role="button" onClick={() => history.push('/')}>Back to home</a>
                         </div>
                         </p>
                     </div>
