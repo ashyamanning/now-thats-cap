@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-
+import Answer from './Answer'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Questions() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+  const [flip, setFlip] = useState(false)
 
   const handleOpen = () => {
     setOpen(true);
@@ -33,12 +34,11 @@ export default function Questions() {
     setOpen(false);
   };
 
-
   return (
     
-    <div>
+    <div className='question'>
       <button type="button" onClick={handleOpen}>
-        react-transition-group
+        <label># BLACKFACTS</label>
       </button>
       <Modal
         aria-labelledby="transition-modal-title"
@@ -55,20 +55,22 @@ export default function Questions() {
         <Fade in={open}>
           <div className={classes.paper}>
               {console.log(foodData[0].question)}
+              
                 <h2 id="transition-modal-title">{foodData[0].question}</h2>
+                <img src={foodData[0].image} width='300px'/>
                 <div>
                   {foodData[0].options.map((item, i) => {
                     return (
-                      <div> 
+                      <div className='options' key={item.id}> 
                         <p>{item}</p>
                       </div>
                     )
                   })}
                 </div>
-              
-      
-            
-            {/* <p id="transition-modal-description">react-transition-group animates me.</p> */}
+                <div type="button" onClick={()=> setFlip(!flip)}>
+                 
+                  {flip ? <Answer/> : foodData[0].question}
+                </div>
           </div>
         </Fade>
       </Modal>
