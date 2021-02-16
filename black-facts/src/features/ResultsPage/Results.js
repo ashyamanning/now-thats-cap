@@ -16,10 +16,20 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Results(props) {
   const history = useHistory();
+  // const classes = useStyles();
+
   const handleNewGame = () => {
     history.push("/menu")
+  };
+
+  const handleNewCategories = () => {
+    history.push("/categories")
   }
-  const classes = useStyles();
+
+  const handleClose = () => {
+    history.push("/")
+  }
+
   return (
     <div className="results_container">
       <Paper elevation={4} className="result">
@@ -31,15 +41,22 @@ export default function Results(props) {
             <h2 className="winner_score_text">Score: Test</h2>
           </div>
         </Paper>
-        <div className="button-div">
-          <div className="button-div">
-          <button type="button" class="btn btn-primary btn-lg btn-block" onClick={handleNewGame}>
-            <p>New Game</p>
-          </button>
-          <button type="button" class="btn btn-primary btn-lg btn-block">
-            <p>New Category</p>
+        <div className="buttonDiv row" >
+          <div className="col">
+          <button type="button" class="btn btn-primary btn-lg btn-block results_button" onClick={handleNewGame}>
+            New Game
           </button>
           </div>
+          <div className="col">
+          <button type="button" class="btn btn-primary btn-lg btn-block results_button" onClick={handleNewCategories}>
+            New categories
+          </button>
+          </div>
+        </div>
+        <div className="closeGame-div">
+          <button type="button" class="btn btn-primary btn-lg btn-block results_button" onClick={handleClose}>
+            Exit Game
+          </button>
         </div>
       </Paper>
     </div>
