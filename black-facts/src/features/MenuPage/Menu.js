@@ -1,11 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 import MenuButton from './MenuButton'
 import SoloTeamNameForm from './SoloTeamNameForm'
+import MultiplayerTeamNameForm from './MultiplayerTeamNameForm'
+import { clearName } from './playerNameSlices/soloTeamNameSlice'
 import '../MenuPage/css/menu.css'
 
 const Menu = () => {
+    // Setting useHistory and useDispatch hooks to variables
     const history = useHistory()
+    const dispatch = useDispatch()
+    // Grabbing the soloPlayerName state, going to clear it on load
+    const name = useSelector((state) => state.soloPlayerName)
     const soloDescription = {
         type: 'Solo',
         description: 'Play a solo game!'
@@ -18,9 +25,12 @@ const Menu = () => {
         type: 'Multiplayer',
         description: 'Play together with friends!'
     }
-    // the actual menu page 
-    // child components will be rendered in the return below!
-    
+
+    const soloTarget = "#exampleModalCenter"
+    const multiTarget = "#exampleModalCenter2"
+    useEffect(() => {
+        dispatch(clearName())
+    }, [])
     return (
         <div className="menuPage">
             <div className="container">
@@ -30,37 +40,38 @@ const Menu = () => {
                 <div className="row cardContainer">
                     <div className="col">
 
-                <div class="card  menuCard">
-                <img class="card-img-top" src="..." alt="Card image cap"/>
-                <div class="card-body">
+                <div className="card  menuCard">
+                <img className="card-img-top" src="..." alt="Card image cap"/>
+                <div className="card-body">
                 <p className="card-text">{soloDescription.description}</p>
                 <div className="buttonDiv" >
-                    <MenuButton description={soloDescription}/>
+                    <MenuButton description={soloDescription} target={soloTarget}/>
                 </div>
                 </div>
                 </div>
                     </div>
                     <div className="col">
-                <div class="card  menuCard">
-                <img class="card-img-top" src="..." alt="Card image cap"/>
-                <div class="card-body">
+                <div className="card  menuCard">
+                <img className="card-img-top" src="..." alt="Card image cap"/>
+                <div className="card-body">
                 <p className="card-text">{multiDescription.description}</p>
                 <div className="buttonDiv">
-                    <MenuButton description={multiDescription}/>
+                    <MenuButton description={multiDescription} target={multiTarget}/>
                 </div>
                 </div>
                 </div>
                 </div>
                     </div>
-                    <div class="jumbotron aboutUs">
-  <h1 class="display-4">ABOUT US</h1>
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Back to home</a>
-  </p>
-</div>
+                    <div className="jumbotron aboutUs">
+                        <h1 className="display-4">ABOUT US</h1>
+                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                        <p className="lead">
+                        <a className="btn btn-primary btn-lg" href="#" role="button" onClick={() => history.push('/')}>Back to home</a>
+                        </p>
+                    </div>
             </div>
             <SoloTeamNameForm />
+            <MultiplayerTeamNameForm />
         </div>
     )
 }
@@ -68,9 +79,3 @@ const Menu = () => {
 
 export default Menu;
 
-// <div class="card" style="width: 18rem;">
-//   <img class="card-img-top" src="..." alt="Card image cap">
-//   <div class="card-body">
-//     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-//   </div>
-// </div>

@@ -16,7 +16,7 @@ const SoloTeamNameForm = () => {
         // push to game screen
     }
     return (
-        <div className="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered" role="document">
           <div className="modal-content">
             <div className="modal-header">
@@ -28,10 +28,10 @@ const SoloTeamNameForm = () => {
             <div className="modal-body">
               <form onSubmit={handleSubmit}>
               <input className="form-control soloNameInput" type="text" placeholder="Player Name" value={teamName} onChange={(e) => setTeamName(e.target.value)} required/>
-              </form>
-            </div>
             <div className="modal-footer">
-              <button type="button" className="btn btn-primary">Submit</button>
+              <button type="submit" className="btn btn-primary">Submit</button>
+            </div>
+              </form>
             </div>
           </div>
         </div>
