@@ -1,10 +1,14 @@
 import React from 'react';
+import ReactCardFlip from 'react-card-flip'
 
-class FrontCard extends React.Component {
-    constructor () {
-        super()
-        this.state = {
-            isFlipped: false
-        }
-    }
+const FrontCard = () =>  {
+    
+    return(
+        <div>
+           #BLACKFACTS
+            
+        </div>
+    )
 }
+
+export default FrontCard;

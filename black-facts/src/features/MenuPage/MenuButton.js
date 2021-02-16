@@ -1,11 +1,9 @@
 import React from 'react'
 
-const MenuButton = ({ description }) => {
-
+const MenuButton = ({ description, target }) => {
   return (
-    <button type="button" class="btn btn-primary btn-lg btn-block">
-      {description.type}
-      <p>{description.description}</p>
+    <button type="button" className="btn btn-primary btn-lg btn-block modalMenuButton" data-toggle="modal" data-target={target}>
+     {description.type}
       </button>
   )
 }

@@ -426,7 +426,7 @@ export const blackhistoryData = [
     options: ['True', 'False'],
     image: 'https://upload.wikimedia.org/wikipedia/commons/6/60/Lenke_djembe_from_Mali.jpeg',
     answer: 'True',
-    description=`The djembe is one of West Africa's best known instruments. This goblet-shaped drum is traditionally carved from a single piece of African hardwood and topped with an animal skin as a drumhead. In western understanding, the drum belongs to the membranophone class of instruments in the percussion family.`
+    description: `The djembe is one of West Africa's best known instruments. This goblet-shaped drum is traditionally carved from a single piece of African hardwood and topped with an animal skin as a drumhead. In western understanding, the drum belongs to the membranophone class of instruments in the percussion family.`
   },
   {
     id: 2,
