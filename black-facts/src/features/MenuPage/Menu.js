@@ -10,6 +10,10 @@ const Menu = () => {
         type: 'Solo',
         description: 'Play a solo game!'
     }
+    const soloDescription2 = {
+        type: 'Home',
+        description: 'Back to Home'
+    }
     const multiDescription = {
         type: 'Multiplayer',
         description: 'Play together with friends!'
@@ -48,7 +52,13 @@ const Menu = () => {
                 </div>
                 </div>
                     </div>
-            
+                    <div class="jumbotron aboutUs">
+  <h1 class="display-4">ABOUT US</h1>
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Back to home</a>
+  </p>
+</div>
             </div>
             <SoloTeamNameForm />
         </div>
