@@ -1,31 +1,42 @@
-import React from 'react';
-import foodData from '../../data/foodData';
-import ReactCardFlip from 'react-card-flip';
+import React, { useState } from "react";
+import foodData from "../../data/foodData";
+import ReactCardFlip from "react-card-flip";
+import Questions from "./Questions";
+class SingleCard extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      isFlipped: false,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-const SingleCard = () => {
-     
+  handleClick(e) {
+    e.preventDefault();
+    this.setState((prevState) => ({ isFlipped: !prevState.isFlipped }));
+  }
+
+  render() {
     return (
-        <div className='single-page'>
-            <div className='question-card'>
+      <div>
+        <Questions/>
+        {/* <ReactCardFlip
+          isFlipped={this.state.isFlipped}
+          flipDirection="vertical"
+          className="card"
+        >
+          <div className="front">
+            <h1>#BLACKFACTS</h1>
+            <button onClick={this.handleClick}>Click to flip</button>
+          </div>
+          {/* <div className='modal'>
+            
+        </div> */}
 
-            </div>
-            <div className='answer-card'>
-
-            </div>
-            <div className='info-card'>
-                {foodData.map((item, index) => {
-                    return(
-                        <div className='item'>
-                            <img src={item.image} alt='img1' width='200px'/>
-                            <h3>{item.name}</h3>
-                            <p>{item.region}</p>
-                            <p>{item.description}</p>
-                        </div>
-                    )
-                })}
-            </div>
-        </div>
-    )
+          {/* <button onClick={this.handleClick}>Click to flip</button>
+        </ReactCardFlip> */}
+      </div> 
+    );
+  }
 }
 export default SingleCard;
-
