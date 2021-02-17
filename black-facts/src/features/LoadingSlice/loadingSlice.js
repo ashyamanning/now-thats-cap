@@ -3,7 +3,7 @@ export const loadingSlice = createSlice({
     name: "loading",
     initialState: false,
     reducers: {
-        setLoading: (state, action) => action.payload
+        setLoading: (state) => !state
     },
 }) 
 
