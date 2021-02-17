@@ -80,7 +80,7 @@ const Menu = () => {
                     </div>
             </div>
             <SoloTeamNameForm />
-            <MultiplayerTeamNameForm />
+          <MultiplayerTeamNameForm />
         </div>
     )
 }

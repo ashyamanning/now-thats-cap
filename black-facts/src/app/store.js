@@ -3,6 +3,7 @@ import soloTeamNameReducer from '../../src/features/MenuPage/playerNameSlices/so
 import multiplayerTeamNameReducer from '../../src/features/MenuPage/playerNameSlices/multiplayerTeamNameSlice'
 import scoreReducer from '../../src/features/Score/scoreSlice'
 import categoryReducer from '../../src/features/CategoryPage/CategoryStateFolder/categorySlice'
+import loadingReducer from '../features/LoadingSlice/loadingSlice'
 import logger from 'redux-logger'
 
 export default configureStore({
@@ -10,7 +11,8 @@ export default configureStore({
     soloPlayerName: soloTeamNameReducer,
     multiplayerTeamNames: multiplayerTeamNameReducer,
     score: scoreReducer,
-    category: categoryReducer
+    category: categoryReducer,
+    loading: loadingReducer
   },
   middleware: [...getDefaultMiddleware(), logger],
 });

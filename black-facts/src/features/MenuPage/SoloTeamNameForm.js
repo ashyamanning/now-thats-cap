@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import {useHistory} from 'react-router-dom'
 import {useDispatch} from 'react-redux'
 import {addName} from './playerNameSlices/soloTeamNameSlice'
+import { setLoading } from '../LoadingSlice/loadingSlice'
+import $ from "jquery";
 
 const SoloTeamNameForm = () => {
     const dispatch = useDispatch()
@@ -11,9 +13,12 @@ const SoloTeamNameForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         dispatch(addName(teamName))
+        dispatch(setLoading())
+        dispatch(setLoading())
         history.push("/categories")
         // send to slice of state
         // push to game screen
+        $("#exampleModalCenter").modal('toggle')
     }
     return (
         <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
