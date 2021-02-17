@@ -3,6 +3,8 @@ import Paper from '@material-ui/core/Paper';
 import { makeStyles } from "@material-ui/core/styles";
 import "../ResultsPage/Css/results.css"
 import { useHistory } from "react-router-dom";
+import { useSelector } from 'react-redux'
+import Logo from "./Logo";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Results(props) {
+  const score = useSelector(state => state.score)
   const history = useHistory();
   // const classes = useStyles();
 
