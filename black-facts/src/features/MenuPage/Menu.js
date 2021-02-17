@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 import MenuButton from './MenuButton'
@@ -33,13 +33,12 @@ const Menu = () => {
     }, [])
     return (
         <div className="menuPage">
-            <div className="container">
-                <h1>
+            <h1>
                     MAIN MENU
                 </h1>
+            <div className="container">
                 <div className="row cardContainer">
                     <div className="col">
-
                 <div className="card  menuCard">
                 <img className="card-img-top" src="..." alt="Card image cap"/>
                 <div className="card-body">
@@ -62,12 +61,22 @@ const Menu = () => {
                 </div>
                 </div>
                     </div>
-                    <div className="jumbotron aboutUs">
+                    <div className="container aboutUsContainer">
+                    <div className="jumbotron aboutUs justify-content-center">
                         <h1 className="display-4">ABOUT US</h1>
-                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                        <ul>
+                            <li className="aboutMeList">Tech Lead: Ashya Manning</li>
+                            <li className="aboutMeList">UI/UX Manager: Uduakabasi Abasiurua</li>
+                            <li className="aboutMeList">PR Manager: Sihame Bazi</li>
+                            <li className="aboutMeList">PR Manager: Johanne Enama</li>
+                            <li className="aboutMeList">Project Manager: Marvin Thompson</li>
+                        </ul>
                         <p className="lead">
-                        <a className="btn btn-primary btn-lg" href="#" role="button" onClick={() => history.push('/')}>Back to home</a>
+                        <div className="jumboButtonDiv">
+                        <a className="btn btn-primary btn-lg btn-block backToHomeMenu" href="#" role="button" onClick={() => history.push('/')}>Back to home</a>
+                        </div>
                         </p>
+                    </div>
                     </div>
             </div>
             <SoloTeamNameForm />

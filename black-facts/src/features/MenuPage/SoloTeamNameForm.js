@@ -29,7 +29,7 @@ const SoloTeamNameForm = () => {
               <form onSubmit={handleSubmit}>
               <input className="form-control soloNameInput" type="text" placeholder="Player Name" value={teamName} onChange={(e) => setTeamName(e.target.value)} required/>
             <div className="modal-footer">
-              <button type="submit" className="btn btn-primary">Submit</button>
+              <button type="submit" className="btn btn-primary formSubmitButton">Submit</button>
             </div>
               </form>
             </div>
