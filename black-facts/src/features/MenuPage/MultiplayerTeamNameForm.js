@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import {useHistory} from 'react-router-dom'
 import {useDispatch} from 'react-redux'
 import {addName} from './playerNameSlices/multiplayerTeamNameSlice'
+import { setLoading } from '../LoadingSlice/loadingSlice'
+import $ from "jquery";
 
 const MultiplayerTeamNameForm = () => {
     const dispatch = useDispatch()
@@ -14,7 +16,12 @@ const MultiplayerTeamNameForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        history.push('/categories')
+        dispatch(setLoading())
+        dispatch(setLoading())
+        history.push("/categories")
+        // send to slice of state
+        // push to game screen
+        $("#exampleModalCenter").modal('toggle')
     }
 
     // notes

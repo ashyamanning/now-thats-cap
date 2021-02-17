@@ -34,6 +34,9 @@ const Menu = () => {
     return (
         <div className="menuPage">
             <h1>
+                #NowThatsCap
+            </h1>
+            <h1>
                     MAIN MENU
                 </h1>
             <div className="container">
