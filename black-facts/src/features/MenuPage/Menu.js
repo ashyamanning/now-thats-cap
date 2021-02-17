@@ -34,9 +34,6 @@ const Menu = () => {
     return (
         <div className="menuPage">
             <h1>
-                #NowThatsCap
-            </h1>
-            <h1>
                     MAIN MENU
                 </h1>
             <div className="container">
@@ -66,7 +63,7 @@ const Menu = () => {
                     </div>
                     <div className="container aboutUsContainer">
                     <div className="jumbotron aboutUs justify-content-center">
-                        <h1 className="display-4">ABOUT US</h1>
+                        <h1 className="display-5">ABOUT US</h1>
                         <ul>
                             <li className="aboutMeList">Tech Lead: Ashya Manning</li>
                             <li className="aboutMeList">UI/UX Manager: Uduakabasi Abasiurua</li>

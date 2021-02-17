@@ -4,6 +4,7 @@ import {useDispatch} from 'react-redux'
 import {addName} from './playerNameSlices/multiplayerTeamNameSlice'
 import { setLoading } from '../LoadingSlice/loadingSlice'
 import $ from "jquery";
+import "../../features/MenuPage/css/formModal.css"
 
 const MultiplayerTeamNameForm = () => {
     const dispatch = useDispatch()
