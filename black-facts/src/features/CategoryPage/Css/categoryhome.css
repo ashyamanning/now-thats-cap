@@ -16,7 +16,7 @@
     /* background-color: seagreen; */
     width: 100vw;
     height: 24vh;
-    margin-top: 8%;
+    margin-top: 6%;
     margin-bottom: -5%;
     justify-content: center;
     justify-self: center;
@@ -29,7 +29,7 @@
 
 .catHomeCat {
     /* background-color: saddlebrown; */
-    height: 28vh;
+    height: 46vh;
     width: 100vw;
     display: flex;
     align-items: center;
