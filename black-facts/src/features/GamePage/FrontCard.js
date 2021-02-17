@@ -5,8 +5,7 @@ const FrontCard = () =>  {
     
     return(
         <div>
-           #BLACKFACTS
-            
+           #NowThatsCap
         </div>
     )
 }
