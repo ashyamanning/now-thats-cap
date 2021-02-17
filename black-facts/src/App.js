@@ -6,7 +6,7 @@ import LandingPage from "./features/LandingPage/LandingPage";
 import CategoryHome from "./features/CategoryPage/CategoryHome";
 import Menu from "./features/MenuPage/Menu";
 import Results from "./features/ResultsPage/Results";
-import Game from "./features/GamePage/Game";
+import Game from "./features/GamePage/PlayGame";
 import {useSelector} from "react-redux"
 import './App.css';
 
