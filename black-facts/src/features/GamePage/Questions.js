@@ -42,7 +42,7 @@ export default function Questions() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-     alert(`Submitting Name ${selectOption}`)
+     alert(`Submitting option ${selectOption}`)
 
   }
 
@@ -92,9 +92,10 @@ export default function Questions() {
                     )
                   })}
                 </div>
+                 
                 <div type="button" onClick={()=> setFlip(!flip)}>
                  
-                  {flip ? <Answer/> : foodData[0].question}
+                  {flip ? <Answer/> : <button>Reveal Answer</button>}
                 </div>
           </div>
         </Fade>
