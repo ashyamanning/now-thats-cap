@@ -1,26 +1,13 @@
 import React from "react";
 import Paper from '@material-ui/core/Paper';
-import { makeStyles } from "@material-ui/core/styles";
 import "../ResultsPage/Css/results.css"
 import { useHistory } from "react-router-dom";
 import { useSelector } from 'react-redux'
-import Logo from "./Logo";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: '640px',
-    height: '480px',
-    '& > *': {
-      margin: theme.spacing(4),
-    },
-  },
-}));
 
 export default function Results(props) {
   const score = useSelector(state => state.score)
   const history = useHistory();
-  // const classes = useStyles();
-
+  
   const handleNewGame = () => {
     history.push("/menu")
   };
@@ -41,7 +28,7 @@ export default function Results(props) {
             <h2 className="winner_score_text">Winner is: Test</h2>
           </div>
           <div className="display_winners">
-            <h2 className="winner_score_text">Score: Test</h2>
+            <h2 className="winner_score_text">Score: {score}</h2>
           </div>
         </Paper>
         <div className="buttonDiv row" >
