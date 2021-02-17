@@ -1,10 +1,10 @@
 export const categoryData = [
-    {title: 'Black History', link: '/nowthatscap/black-history'},
-    {title: 'Pop Culture', link: '/nowthatscap/pop-culture'},
-    {title: 'Music', link: '/nowthatscap/music'},
-    {title: 'Food', link: '/nowthatscap/food'},
-    {title: 'Art', link: '/nowthatscap/art'},
-    {title: 'Countries', link: '/nowthatscap/countries'},
+    {id: 1, title: 'Black History', link: '/play/black-history'},
+    {id: 2, title: 'Pop Culture', link: '/play/pop-culture'},
+    {id: 3, title: 'Music', link: '/play/music'},
+    {id: 4, title: 'Food', link: '/play/food'},
+    {id: 5, title: 'Art', link: '/play/art'},
+    {id: 6, title: 'Countries', link: '/play/countries'},
 ]
 
 export default categoryData
