@@ -1,0 +1,15 @@
+:root {
+    --darkblue: #001524;
+    --seagreen: #15616D;
+    --tan: #FFECD1;
+    --orange: #FF7D00;
+    --burgandy: #78290F;
+}
+
+.modalMenuButton {
+    box-shadow:  4px 2px 6px rgba(12, 12, 12, 0.2);
+    color: white !important;
+    background-color: var(--seagreen) !important;
+    border-color: var(--seagreen) !important;
+    transition: 1s;
+}
