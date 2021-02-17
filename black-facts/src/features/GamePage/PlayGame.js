@@ -2,7 +2,7 @@ import React from 'react';
 import SingleCard from './SingleCard';
 // import Card from './Card'
 
-const Game = () => {
+const PlayGame = () => {
     return (
         <div>
             <SingleCard/>
@@ -11,4 +11,4 @@ const Game = () => {
     )
 }
 
-export default Game;
+export default PlayGame;
