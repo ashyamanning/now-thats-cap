@@ -3,11 +3,68 @@
     margin: 0
 }
 
-
 .mainGameBoard {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.questions-section {
+    /* background: purple; */
     margin-top: 2.5%;
+    margin-left: 1% !important;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-row-gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 5px;
+}
+
+.left-div {
+    width: 70vw;
+}
+
+.tracking-section {
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.right-div {
+    width: 26vw;
+    margin-left: 5% !important;
+    margin-top: 2%;
+}
+
+.timer-div {
+    padding-top: 10%;
+}
+
+.top-div {
+    border-radius: 1rem;
+    margin-top: 5%;
+    background: #FFECD1;
+    box-shadow: 2px 1px 5px 6px #FF7D00;
+}
+
+.score-div {
+    /* background: blue; */
+    padding-top: 10%;
+} 
+
+.bottom-div {
+    border-radius: 1rem;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    background: #FFECD1;
+    box-shadow: 2px 1px 5px 6px #FF7D00;
+}
+
+.score-label, .timer-label {
+    font-variant: small-caps;
+    font-size: 50px;
+}
+
+.div-for-score {
+    margin-top: 10%;
 }
