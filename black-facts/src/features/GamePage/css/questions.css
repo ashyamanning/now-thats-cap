@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.question-main-container {
+    background: pink;
+    height: 150px;
+    width: 190px;
+    border-radius: 1rem;
+}
+
+.card-btn {
+    height: 150px;
+    width: 190px;
+    background: #001524;
+    border-radius: 1rem;
+    border: none;
+}
+
+.card-logo-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.card-label {
+    color: #FF7D00;
+}
+
+.modal-container-modal {
+    width: 700px !important;
+    height: 500px !important;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 4%;
+}
+
+.paper-design {
+    background: #FF7D00;
+    border-radius: 1rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 1%;
+    padding-left: 1%;
+    text-align: center;
+    box-shadow: 1px 1px 5px 6px #FFECD1;
+}
+
+.question-styling {
+    font-size: 20px;
+    font-variant: small-caps;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.question-img-styling {
+    object-fit: stretch !important;
+    border-radius: 0.5rem;
+}
+
+.style-option-div {
+    text-align: start;
+}
+
+.option-labels {
+    width: 200px;
+    font-size: 18px;
+}
+
+.facts-cap-btn-div {
+    width: 100%;
+    margin-top: 3%;
+}
+
+.facts-cap-btn {
+    width: 200px;
+    height: 50px;
+    background: #FFECD1;
+    font-size: 20px;
+    padding: 0.5%;
+    font-variant: small-caps;
+    color: #001524;
+    border: none;
+    box-shadow: 1px 2px 5px 6px #78290F;
+    border-radius: 0.5rem;
+}
+
+.select-btn-random:hover {
+    box-shadow: 3px 2px 5px 6px #78290F;
+    border: none;
+    transform: scaleY(1.5);
+}

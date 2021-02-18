@@ -6,12 +6,14 @@ import countriesData from '../../data/countriesData'
 import foodData from '../../data/foodData'
 import musicData from '../../data/musicData'
 import artData from '../../data/artData'
-import popcultureData from '../../data/popcultureData'
+import popcultureData from '../../data/popcultureData';
+import Score from './../Score/Score.js';
+import NewTimer from '../Timer/Timer'
 import { useSelector } from 'react-redux';
 import './css/playgame.css'
 import { useHistory } from 'react-router-dom'
 
-const PlayGame = () => {
+const PlayGame = ({ expiryTimeStamp }) => {
     const category = useSelector(state => state.category);
     const history = useHistory()
     // local state of questions to be mapped through
@@ -24,7 +26,7 @@ const PlayGame = () => {
     useEffect(() => {
         const fetchHelper = (arr) => {
             debugger
-            const arrCopy = arr.slice(0, 25)
+            const arrCopy = arr.slice(0, 20)
             console.log(arrCopy)
             setQuestions(arrCopy)
         }
@@ -48,7 +50,25 @@ const PlayGame = () => {
     }, [])
     return (
         <div className="mainGameBoard">
-            {questionCards}
+            <div className="questions-section left-div">
+                {questionCards}
+            </div>
+
+            <div className="tracking-section right-div">
+                <div className="score-div top-div">
+                    <h1 className="score-label"> Score </h1>
+                    
+                    <div className="div-for-score">
+                        <Score/> 
+                    </div>
+
+                </div>
+
+                <div className="timer-div bottom-div"> 
+                    <h1 className="timer-label"> <NewTimer expiryTimestamp={expiryTimeStamp}/> </h1>
+                </div>
+            </div>
+
         </div>
     )
 }

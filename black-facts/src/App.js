@@ -17,7 +17,7 @@ const App = () => {
   if (loading) return <div>LOADING...</div>
   const time = new Date();
   // time.setSeconds(time.getSeconds() + 90); // 10 minutes timer
-  console.log(time)
+  // console.log(time)
   return (
     <div className="App">
       <Switch>
@@ -31,9 +31,8 @@ const App = () => {
           <CategoryHome/>
         </Route>
         <Route path={"/play"}>
-          <Game/>
-          <Score />
-          <NewTimer expiryTimestamp={time}/>
+          <Game expiryTimeStamp={time}/>
+          {/* <Score/> */}
         </Route>
         <Route path={"/results"}>
           <Results/>
