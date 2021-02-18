@@ -1,11 +1,12 @@
-
 import React, { useState } from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import Answer from './Answer'
-import { useDispatch } from 'react-redux'
+import Answer from './Answer';
+import './css/questions.css';
+import fistLogo from './../../assets/fistLogo.png'
+import { useDispatch } from 'react-redux';
 import {
    addScore,
    clearScore,
@@ -56,9 +57,10 @@ export default function Questions({ question }) {
      // after submitted, disable
   }
   return (
-    <div className='question'>
-      <button type="button" onClick={handleOpen}>
-        <label># BLACKFACTS</label>
+    <div className='question-main-container'>
+      <button  className="card-btn" type="button" onClick={handleOpen}>
+        <img className="card-logo-img" src={fistLogo}/>
+        <label className="card-label"> #NowThatsCap</label>
       </button>
       <Modal
         aria-labelledby="transition-modal-title"

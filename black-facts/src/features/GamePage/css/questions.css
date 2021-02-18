@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.question-main-container {
+    background: pink;
+    height: 150px;
+    width: 190px;
+    border-radius: 1rem;
+}
+
+.card-btn {
+    height: 150px;
+    width: 190px;
+    background: #001524;
+    border-radius: 1rem;
+    border: none;
+}
+
+.card-logo-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.card-label {
+    color: #FF7D00;
+    /* font-variant: small-caps;
+    font-size: 14px; */
+
+}
