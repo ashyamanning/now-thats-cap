@@ -20,6 +20,21 @@
     overflow: hidden;
 }
 
+.formModal {
+    background: var(--darkblue);
+    border: 6px solid var(--seagreen) !important;
+    border-radius: 1.5rem;
+
+}
+.formHeader {
+    border-bottom: var(--darkblue) !important;
+}
+
+#exampleModalLongTitle {
+    color: #fff  !important;
+}
+
+
 .main-menu-container  {
     padding: 1%;
     width: 80vw;
@@ -33,6 +48,17 @@
     border-radius: 1rem;
     border-top-left-radius: 1rem;
     
+}
+
+.hyperLinkGH {
+    max-width: 40px;
+    max-height: 40px;
+    margin: 5px;
+    filter: invert(1);
+}
+
+.hyperLinkGH:hover {
+    cursor: pointer;
 }
 
 .main-menu-container:before {
