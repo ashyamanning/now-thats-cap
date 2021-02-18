@@ -22,10 +22,10 @@ const SoloTeamNameForm = () => {
         $("#exampleModalCenter").modal('toggle')
     }
     return (
-        <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div className="modal fade formModalParent" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered" role="document">
-          <div className="modal-content">
-            <div className="modal-header">
+          <div className="modal-content formModal">
+            <div className="modal-header formHeader">
               <h5 className="modal-title" id="exampleModalLongTitle">Solo Team Game</h5>
               <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
