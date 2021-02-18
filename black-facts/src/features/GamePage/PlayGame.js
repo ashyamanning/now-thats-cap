@@ -24,6 +24,7 @@ const PlayGame = () => {
         const fetchHelper = (arr) => {
             debugger
             const arrCopy = arr.slice(0, 25)
+            console.log(arrCopy)
             setQuestions(arrCopy)
         }
         const fetchQuestions = (str) => {
