@@ -47,14 +47,11 @@ export default function Questions({ question }) {
     console.log('choice', e.target.value)
   }
   const handleSubmit = () => {
-     alert(`Submitting Name ${selectOption}`)
      if (selectedAnswer === question.answer) {
        debugger
        dispatch(addScore())
        debugger
-     } else if (!selectedAnswer) {
-       alert(`Please choose an answer`)
-     }
+     } 
      // if correct, score ++
      // after submitted, disable
   }
