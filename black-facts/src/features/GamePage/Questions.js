@@ -51,6 +51,8 @@ export default function Questions({ question }) {
        debugger
        dispatch(addScore())
        debugger
+     } else if (!selectedAnswer) {
+       alert(`Please choose an answer`)
      }
      // if correct, score ++
      // after submitted, disable
@@ -73,10 +75,11 @@ export default function Questions({ question }) {
         }}
       >
         <Fade in={open}>
-          <div className={classes.paper}>
+          <div className={classes.paper} width='500px'>
               {console.log(question.question)}
-                <h2 id="transition-modal-title">{question.question}</h2>
-                <img src={question.image} width='300px'/>
+            <h3 id="transition-modal-title">{question.question}</h3>
+            <div id='options-container'>
+              <img src={question.image} width='400px' height='300px'/>
                 <div className='multiple-choice'>
                   {question.options.map((item, i) => {
                     return (
@@ -99,9 +102,10 @@ export default function Questions({ question }) {
                     )
                   })}
                 </div>
+                </div>
                  
                 <div type="button" onClick={()=> setFlip(!flip)}>
-                  {flip ? <Answer question={question}/> : <button type="button" onClick={handleSubmit}>Submit</button>}
+                  {selectedAnswer ? <Answer question={question}/> : <button type="button" onClick={handleSubmit}>Submit</button>}
                 </div>
           </div>
         </Fade>
