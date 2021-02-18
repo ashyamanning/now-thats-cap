@@ -28,7 +28,7 @@ export default function Results(props) {
             <h2 className="winner_score_text">Winner is: Test</h2>
           </div>
           <div className="display_winners">
-            <h2 className="winner_score_text">Score: {score}</h2>
+            <h2 className="winner_score_text">Score: {score.value}</h2>
           </div>
         </Paper>
         <div className="buttonDiv row" >
