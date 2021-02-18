@@ -5,7 +5,8 @@ import { useHistory } from "react-router-dom";
 import { useSelector } from 'react-redux'
 
 export default function Results(props) {
-  const score = useSelector(state => state.score)
+  const score = useSelector(state => state.score);
+  const soloPlayerName = useSelector(state => state.soloPlayerName)
   const history = useHistory();
   
   const handleNewGame = () => {
@@ -25,7 +26,7 @@ export default function Results(props) {
       <Paper elevation={4} className="result">
         <Paper elevation={10} className="winner_scores">
           <div className="display_winners">
-            <h2 className="winner_score_text">Winner is: Test</h2>
+            <h2 className="winner_score_text">Winner is: {soloPlayerName}</h2>
           </div>
           <div className="display_winners">
             <h2 className="winner_score_text">Score: {score}</h2>
