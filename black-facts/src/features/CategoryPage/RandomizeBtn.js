@@ -11,9 +11,10 @@ const RandomizeBtn = () => {
     const history = useHistory();
 
     const handleRandom = (e) => {
-        let randomCategory = categoryData[Math.floor(Math.random() * categoryData.length)]
-        dispatch(addCategory(e.currentTarget.randomCategory))
-        history.push(`/play`)
+        alert("Feature Coming Soon!!")
+        // let randomCategory = categoryData[Math.floor(Math.random() * categoryData.length)]
+        // dispatch(addCategory(e.currentTarget.randomCategory))
+        // history.push(`/play`)
     }
 
     return (
