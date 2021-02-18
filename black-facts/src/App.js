@@ -7,6 +7,7 @@ import CategoryHome from "./features/CategoryPage/CategoryHome";
 import Menu from "./features/MenuPage/Menu";
 import Results from "./features/ResultsPage/Results";
 import Game from "./features/GamePage/PlayGame";
+import Score from "./features/Score/Score"
 import {useSelector} from "react-redux"
 import './App.css';
 
@@ -28,6 +29,7 @@ const App = () => {
         </Route>
         <Route path={"/play"}>
           <Game/>
+          <Score />
         </Route>
         <Route path={"/results"}>
           <Results/>
