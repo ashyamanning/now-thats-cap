@@ -88,7 +88,7 @@
     border-radius: 0.5rem;
 }
 
-.select-btn-random:hover {
+.facts-cap-btn:hover {
     box-shadow: 3px 2px 5px 6px #78290F;
     border: none;
     transform: scaleY(1.5);

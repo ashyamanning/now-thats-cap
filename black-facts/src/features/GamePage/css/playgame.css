@@ -1,3 +1,11 @@
+:root {
+    --darkblue: #001524;
+    --seagreen: #15616D;
+    --tan: #FFECD1;
+    --orange: #FF7D00;
+    --burgandy: #78290F;
+}
+
 * {
     padding: 0;
     margin: 0
@@ -48,11 +56,10 @@
     border-radius: 1rem;
     margin-top: 5%;
     background: #FFECD1;
-    box-shadow: 2px 1px 5px 6px #FF7D00;
+    box-shadow: 2px 1px 5px 6px var(--orange);
 }
 
 .score-div {
-    /* background: blue; */
     padding-top: 10%;
 } 
 
