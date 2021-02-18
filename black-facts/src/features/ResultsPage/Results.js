@@ -94,12 +94,16 @@ export default function Results(props) {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
+      backgroundColor:'black',
+      borderRadius: '2rem',
     },
     paper: {
-      backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
+      backgroundColor: "black",
+      border: '10px solid #FF7D00',
+      borderRadius: '2rem',
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
+      borderRadius:'2rem',
     },
   }));
 
@@ -121,7 +125,9 @@ export default function Results(props) {
 
   return (
     <div className="results_container">
-      <Paper elevation={4} className="result" onMouseEnter={() => handleShow(true)}
+      <Paper elevation={4} 
+      className="result" 
+       onMouseEnter={() => handleShow(true)}
         onMouseLeave={() => handleShow(false)}
         className="confetti-wrap" >
         <Paper elevation={10} className="winner_scores" >

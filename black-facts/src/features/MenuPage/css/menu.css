@@ -16,6 +16,36 @@
 
 .aboutMeList {
     list-style: none;
+    color: #fff;
+   
+}
+
+.imageContainer {
+    padding: unset;
+}
+
+.cardDescription {
+    color: #fff
+}
+
+.imageTop {
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+}
+
+.aboutTeam {
+    max-width: 150px;
+    max-height: 150px;
+    margin: auto;
+    height: 100%;
+    border-radius: 1.5rem;
+    margin: 5px;
+    border: 6px solid var(--seagreen) !important;
+}
+.aboutUsTitle {
+    color: #fff !important;
 }
 .menuPage {
     height: 100vh;
@@ -27,6 +57,12 @@
 
 .menuCard {
     box-shadow:  5px 7px 15px rgba(26, 26, 27, 0.2);
+    border-radius: 1.5rem;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1.5%;
+    box-shadow: 2px 1px 5px 6px #15616d;
+    background: #001524;
 }
 
 .backToHomeMenu {
@@ -38,6 +74,12 @@
 }
 .aboutUs {
     box-shadow:  5px 7px 15px rgba(26, 26, 27, 0.2);
+    border-radius: 1.5rem;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1.5%;
+    box-shadow: 2px 1px 5px 6px #15616d;
+    background: #001524;
 }
 @media(max-width: 700px) {
     .menuCard { 
