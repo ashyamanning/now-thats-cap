@@ -8,7 +8,6 @@
   background: black;
   display: flex;
   justify-content: center;
-  /* padding-top: 12%; */
   justify-content: center;
   color: #fff;
   font-family: Arial, sans-serif;
@@ -72,17 +71,18 @@
   padding-left: 10px;
   background-image: linear-gradient(to right,#15616D , #1d7b8a,#165a64);
   box-shadow: 18px 12px 17px rgb(218 72 33 / 74%);
-  
 }
 
 .display_winners {
-  display: contents;
   margin-bottom: 5%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .winner_score_text {
-  text-align: start;
-  margin: 5% 0 5% 5%;
+  text-align: center;
+  margin: 3% 0 0 3%;
   display: flex;
   color: #fff;
 }
@@ -114,7 +114,6 @@
   padding: 20px;
   justify-content: center;
   align-items: center;
-  /* margin-top: 10%; */
   width: 50%;
 }
 
