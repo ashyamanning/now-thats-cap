@@ -12,6 +12,8 @@ import sihame from './css/images/Sihame Bazi.jpg'
 import johanne from './css/images/Johanne Enama.jpg'
 import ashya from './css/images/Pursuit - Ashya Manning.jpg'
 import uduakabasi from './css/images/Image from iOS.jpg'
+import linkedin from './css/images/linkedin.png'
+import github from './css/images/github.png'
 
 
 const Menu = () => {
@@ -83,6 +85,9 @@ const Menu = () => {
                                         <img src={ashya} alt={"ashya manning"} className={"aboutTeam"}/>
                                         <p style={{textDecoration: 'underline'}}>Tech Lead</p>
                                         <a style={{color: '#fff'}} href="https://www.linkedin.com/in/ashyalmanning/">Ashya Manning</a>
+                                        <div>
+                                            <img src={github} alt={"github"} className={"hyperLinkGH"} href={'https://github.com/ashyamanning'} target="_blank" />
+                                        </div>
                                     </li>
                                 </div>
 
@@ -91,6 +96,9 @@ const Menu = () => {
                                         <img src={uduakabasi} alt={"ashya manning"} className={"aboutTeam"}/>
                                         <p style={{textDecoration: 'underline'}}>UI/UX Manager</p>
                                         <a style={{color: '#fff'}} href="https://www.linkedin.com/in/uduakabasi-abasiurua/">Uduakabasi Abasiurua</a>
+                                        <div>
+                                            <img src={github} alt={"github"} className={"hyperLinkGH"} href={'https://github.com/darsuabasi'} target="_blank" />
+                                        </div>
                                     </li>
                                 </div>
 
@@ -99,6 +107,9 @@ const Menu = () => {
                                         <img src={sihame} alt={"ashya manning"} className={"aboutTeam"}/>
                                         <p style={{textDecoration: 'underline'}}>PR Manager</p>
                                         <a style={{color: '#fff'}} href="https://www.linkedin.com/in/sihame-bazi/">Sihame Bazi</a>
+                                        <div>
+                                            <img src={github} alt={"github"} className={"hyperLinkGH"} href={'https://github.com/bsihame'} target="_blank" />
+                                        </div>
                                     </li>
                                 </div>
 
@@ -107,6 +118,9 @@ const Menu = () => {
                                         <img src={johanne} alt={"ashya manning"} className={"aboutTeam"}/>
                                         <p style={{textDecoration: 'underline'}}>PR Manager</p>
                                         <a style={{color: '#fff'}} href="https://www.linkedin.com/in/johanne-enama/">Johanne Enama</a>
+                                        <div>
+                                            <img src={github} alt={"github"} className={"hyperLinkGH"} href={'https://github.com/jenama'} target="_blank" />
+                                        </div>
                                     </li>
                                 </div>
 
@@ -115,6 +129,9 @@ const Menu = () => {
                                         <img src={marvin} alt={"ashya manning"} className={"aboutTeam"}/>
                                         <p style={{textDecoration: 'underline'}}>Project Manager</p>
                                         <a style={{color: '#fff'}} href="https://www.linkedin.com/in/marvinjthompson/">Marvin Thompson</a>
+                                        <div>
+                                            <img src={github} alt={"github"} className={"hyperLinkGH"} href={'https://github.com/marvinthompson-code'} target="_blank" />
+                                        </div>
                                     </li>
                                 </div>
                             </div>
