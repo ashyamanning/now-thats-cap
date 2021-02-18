@@ -5,6 +5,7 @@ import MenuButton from './MenuButton'
 import SoloTeamNameForm from './SoloTeamNameForm'
 import MultiplayerTeamNameForm from './MultiplayerTeamNameForm'
 import { clearName } from './playerNameSlices/soloTeamNameSlice'
+import { clearScore } from '../Score/scoreSlice'
 import '../MenuPage/css/menu.css'
 import fist from './css/images/fistlogo.png'
 import marvin from './css/images/marvin.jpeg'
@@ -39,6 +40,7 @@ const Menu = () => {
     const multiTarget = "#exampleModalCenter2"
     useEffect(() => {
         dispatch(clearName())
+        dispatch(clearScore())
     }, [])
     return (
         <div className="menuPage">
