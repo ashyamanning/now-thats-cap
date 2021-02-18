@@ -5,6 +5,9 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import Answer from './Answer'
+import {useDispatch} from 'react-redux'
+import { addScore }  from '../Score/scoreSlice'
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -21,12 +24,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Questions() {
+export default function Questions({ question }) {
   const classes = useStyles();
+  const dispatch = useDispatch()
+
   const [open, setOpen] = React.useState(false);
   const [flip, setFlip] = useState(false)
   const [selectOption, setSelectOption] = useState('')
+  const [selectedAnswer, setSelectedAnswer] = useState('')
 
+  const handleClick = (e) => {
+    setSelectedAnswer(e.target.value)
+  }
   const handleOpen = () => {
     setOpen(true);
   };
@@ -40,16 +49,25 @@ export default function Questions() {
     console.log('choice', e.target.value)
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-     alert(`Submitting option ${selectOption}`)
+  const increment = () => {
+    dispatch(addScore())
+  }
 
+  const handleSubmit = () => {
+     alert(`Submitting Name ${selectOption}`)
+     if (selectedAnswer === question.answer) {
+       debugger
+       increment()
+       debugger
+     }
+     // if correct, score ++
+     // after submitted, disable
   }
 
   return (
     
     <div className='question'>
-      <button type="button" onClick={handleOpen}>
+      <button className='front' type="button" onClick={handleOpen}>
         <label># BLACKFACTS</label>
       </button>
       <Modal
@@ -66,13 +84,13 @@ export default function Questions() {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-              {console.log(foodData[0].question)}
+              {console.log(question.question)}
               
-                <h2 id="transition-modal-title">{foodData[0].question}</h2>
-                <img src={foodData[0].image} width='300px'/>
+                <h2 id="transition-modal-title">{question.question}</h2>
+                <img src={question.image} width='300px'/>
                 
                 <div className='multiple-choice'>
-                  {foodData[0].options.map((item, i) => {
+                  {question.options.map((item, i) => {
                     return (
                       <div className='options' key={item.id}> 
                         <form onSubmit={handleSubmit}>
@@ -84,6 +102,7 @@ export default function Questions() {
                                     value={item}
                                     onChange={handleChange}
                                     checked={selectOption === item}
+                                    onClick={handleClick}
                                     />
                             <label className="form-check-label" for="inlineRadio1">{item}</label>
                           </div>
@@ -95,7 +114,7 @@ export default function Questions() {
                  
                 <div type="button" onClick={()=> setFlip(!flip)}>
                  
-                  {flip ? <Answer/> : <button>Reveal Answer</button>}
+                  {flip ? <Answer question={question}/> : <button type="button" onClick={handleSubmit}>Submit</button>}
                 </div>
           </div>
         </Fade>

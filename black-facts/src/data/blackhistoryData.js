@@ -196,8 +196,7 @@ export const blackhistoryData = [
     question: `American educator, author, orator, and adviser to multiple presidents of the United States
     Founder of Tuskegee University
     Book : Up From Slavery`,
-    options: ['Frederick Douglass', 'W.E.B. Du Bois', 'Booker T. Washington', '
-    Barack Obama'],
+    options: ['Frederick Douglass', 'W.E.B. Du Bois', 'Booker T. Washington', 'Barack Obama'],
     // image:'https://',
     answer: 'Booker T. Washington',
   },
