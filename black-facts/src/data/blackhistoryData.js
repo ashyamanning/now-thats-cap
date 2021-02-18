@@ -7,6 +7,7 @@ export const blackhistoryData = [
     options: ['Oprah Winfrey', 'Michelle Obama', 'Aretha Franklin', 'Janet Jackson'],
     image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Aretha_Franklin_1968.jpg',
     answer: 'Aretha Franklin',
+    region:'',
     description: `Aretha Franklin became the first female artist to be inducted into the Rock and Roll Hall of Fame in 1987. She is one of the most honored artists in Grammy Award history, winning her 18th honor in 2008.`
   },
   {
@@ -16,6 +17,7 @@ export const blackhistoryData = [
     options: ['Hattie McDaniel', 'Halle Berry', 'Viola Davis', 'Kerry Washington'],
     image: 'https://media.vanityfair.com/photos/6026c33eb3de5e8d0957c3f9/master/w_2560%2Cc_limit/908537162',
     answer: 'Halle Berry',
+    region:'',
     description: `Halle Berry is the first African American to win the Academy Award for best actress. She received the honour for her nuanced portrayal of Leticia Musgrove, a down-on-her-luck character in Monster’s Ball (2001).`
   },
   {
@@ -25,6 +27,7 @@ export const blackhistoryData = [
     options: ['Ella Fitzgerald', 'Ray Charles', 'Beyonce', 'James Brown'],
     image: 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTIwNjA4NjMzNzU0ODQ2NzMy/james-brown-9228350-1-402.jpg',
     answer: 'James Brown',
+    region:'',
     description: `James Brown, the "Godfather of Soul," was a prolific singer, songwriter and bandleader, as well as one of the most iconic figures in funk and soul music.`
   },
   {
@@ -34,6 +37,7 @@ export const blackhistoryData = [
     options: ['Blues', 'Soul', 'R&B', 'Rap'],
     image: 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY2OTU1MzIzNzkyMzAzMTIz/bb_king_photo_onekindfa_305rgbbbking_universal_music_group_promojpg.jpg',
     answer: 'Blues',
+    region:'',
     description: `"King of the Blues" B.B. King began as a disc jockey in Memphis before finding fame as a blues and R&B guitarist, with hits like "The Thrill Is Gone."`
   },
   {
@@ -43,6 +47,7 @@ export const blackhistoryData = [
     options: ['The Vandellas', 'The Marvelettes', 'The Supremes', 'The Hansens'],
     image: 'https://i.guim.co.uk/img/media/e6a1894c23d39be82881327fab1657ebb577a234/161_237_1568_940/master/1568.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=377bc193b9f8651889c61c5e33d8c9e1',
     answer: 'The Supremes',
+    region:'',
     description: `The Supremes were the most commercially successful of Motown's acts. They are, to date, America's most successful vocal group.`
   },
 
@@ -53,6 +58,7 @@ export const blackhistoryData = [
     options: ['Sidney Poitier', 'Morgan Freeman', 'James Earl Jones', 'Ice Cube'],
     image: 'https://www.veteransadvantage.com/sites/default/files/styles/node_image/public/nodes/assets/wordpress-medal-obama-poitier-42-23115776.jpg?itok=XHQU2lFX',
     answer: 'Sidney Poitier',
+    region:'',
     description: `Not many Academy Award-winning actors started out as immigrant teens washing dishes. But Sidney Poitier, a young orphan desperate to emerge from poverty and make something of himself, faced his raw beginnings by joining the U.S. Army and has made history as a trailblazing actor ever since.`
   },
   {
@@ -62,6 +68,7 @@ export const blackhistoryData = [
     options: ['Art Deco', '2nd Period', 'Reconstruction', 'Harlem Renaissance'],
     image: 'https://www.buala.org/sites/default/files/imagecache/full/2020/04/harlem-renaissance_0.jpg',
     answer: 'Harlem Renaissance',
+    region:'',
     description: `The Harlem Renaissance was the development of the Harlem neighborhood in New York City as a Black cultural mecca in the early 20th Century and the subsequent social and artistic explosion that resulted. Lasting roughly from the 1910s through the mid-1930s, the period is considered a golden age in African American culture, manifesting in literature, music, stage performance and art.`
   },
   {
@@ -71,6 +78,7 @@ export const blackhistoryData = [
     options: ['Aretha Franklin', 'Alex Haley', 'Hattie McDaniel', 'James Brown'],
     image: 'https://news.stthomas.edu/wp-content/uploads/2014/02/140203mej159_001.jpg',
     answer: 'Alex Haley',
+    region:'',
     description: `Alex Haley was a writer whose works of historical fiction and reportage depicted generations of African American lives. He is widely known for 'Roots' and 'The Autobiography of Malcolm X.' “Either you deal with what is the reality, or you can be sure that the reality is going to deal with you.”
     —Alex Haley`
   },
@@ -81,6 +89,7 @@ export const blackhistoryData = [
     options: ['Alice Walker', 'Sarah Vaughan', 'Sojourner Truth', 'Ms. Tanksley'],
     image: 'https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/JxhS1iU4Xwyr8ry8AqwMaUrlzqc=/1660x934/smart/filters:no_upscale()/arc-anglerfish-arc2-prod-dmn.s3.amazonaws.com/public/MGDTEAZ7GDDZEMZNZFERF7BMLI.jpg',
     answer: 'Sarah Vaughan',
+    region:'',
     description: `The power, range, and flexibility of her voice made Sarah Vaughan, known as "Sassy" or "The Divine One," one of the great singers in jazz.`
   },
   {
@@ -90,6 +99,7 @@ export const blackhistoryData = [
     options: ['Alice Walker', 'Sarah Vaughan', 'Ms. Evans', 'Oprah Winfrey'],
     image: 'https://dailynorthwestern.com/wp-content/uploads/2018/10/WALKER-Courtesy-WEB-900x600.jpg',
     answer: 'Alice Walker',
+    region:'',
     description: `Walker is a feminist and vocal advocate for human rights, and she has earned critical and popular acclaim as a major American novelist and intellectual. Her literary reputation was secured with her Pulitzer Prize-winning third novel, The Color Purple (1982).`
   },
   {
@@ -98,6 +108,7 @@ export const blackhistoryData = [
     question: `Who spoke out the for freedom of slaves, equal rights for women and was the first black person to be nominated for Vice President of the United States?`,
     options: ['Nat Turner', 'Colin Kaepernick', 'Frederick Douglass', 'Letitia Wood Brown'],
     // image:'https://',
+    region:'',
     answer: 'Frederick Douglass',
   },
   {
@@ -106,6 +117,7 @@ export const blackhistoryData = [
     question: `This individual was responsible for organizing one of the largest slave rebellions in US.`,
     options: ['Nat Turner', 'Frederick Douglass', 'Henry Brown', 'Marcus Garvey'],
     // image:'https://',
+    region:'',
     answer: 'Nat Turner',
   },
   {
@@ -114,6 +126,7 @@ export const blackhistoryData = [
     question: `The first African-American child to attend an all-white school in Louisiana in 1960 sparking the end of segregation in American schools.`,
     options: ['Viola Desmond', 'Ruby Bridges', 'Rosa Parks', 'Marcus Garvey'],
     // image:'https://',
+    region:'',
     answer: 'Ruby Bridges',
   },
   {
@@ -122,6 +135,7 @@ export const blackhistoryData = [
     question: `This individual had himself shipped in a box from Virginia to Pennsylvania - a state where he would be a free individual.`,
     options: ['Henry Brown', 'Marcus Garvey', 'Nat Turner', 'Tarana Burke'],
     // image:'https://',
+    region:'',
     answer: 'Henry Brown',
   },
   {
@@ -130,6 +144,7 @@ export const blackhistoryData = [
     question: `This individual sparked the Black Lives Matter movement.`,
     options: ['Taran Burke', 'Maya Angelou', 'Letitia Wood Brown', 'Colin Kaepernick'],
     // image:'https://',
+    region:'',
     answer: 'Colin Kaepernick',
   },
   {
@@ -138,6 +153,7 @@ export const blackhistoryData = [
     question: `This Queen of Soul forever changed the music industry carving the way for many other musicians. R-E-S-P-E-C-T`,
     options: ['Maya Angelou', 'Aretha Franklin', 'Viola Desmond', 'Rosa Parks'],
     // image:'https://',
+    region:'',
     answer: 'Aretha Franklin',
   },
   {
@@ -146,6 +162,7 @@ export const blackhistoryData = [
     question: `First African American woman director in Hollywood in 1971.`,
     options: ['Maya Angelou', 'Tarana Burke', 'Rosa Parks', 'Letitia Wood Brown'],
     // image:'https://',
+    region:'',
     answer: 'Maya Angelou',
   },
   {
@@ -154,6 +171,7 @@ export const blackhistoryData = [
     question: `First Black Female to earn a Harvard PhD.`,
     options: ['Maya Angelou', 'Tarana Burke', 'Rosa Parks', 'Letitia Wood Brown'],
     // image:'https://',
+    region:'',
     answer: 'Letitia Wood Brown',
   },
   {
@@ -162,76 +180,93 @@ export const blackhistoryData = [
     question: `The original founder of the "Me Too" movement, in 2006.`,
     options: ['Tarana Burke', 'Maya Angelou', 'Letitia Wood Brown', 'Ruby Bridges'],
     // image:'https://',
+    region:'',
     answer: 'Tarana Burke',
   },
   {
     id: 20,
     type: 'multiple choice',
-    question: `American sociologist, socialist, historian, civil rights activist, Pan-Africanist, author, writer and editor
-    founders of the National Association for the Advancement of Colored People (NAACP) and from 1910 to 1934`,
-    options: ['William Edward Burghardt Du Bois', 'Booker T. Washington', 'Frederick Douglass', 'Barack Obama'],
+    question: `Considered the Greatest to ever play the game, "His Airness" was also one of the most marketed sports figures in history.`,
+    options: ['Hank Aaron', 'Jackie Robinson', 'Jackie Robinson', 'Michael Jordan'],
     // image:'https://',
-    answer: 'William Edward Burghardt Du Bois',
+    region:'',
+    answer: 'Michael Jordan',
   },
-  {
+   {
     id: 21,
     type: 'multiple choice',
     question: `Abolitionist Worked for the Union Army during the war and later became a leader in women's suffrage movement.Earned the nickname "Moses" after the prophet Moses in the Bible who led his people to freedom. In all of her journeys she "never lost a single passenger."`,
     options: ['Frederick Douglass', 'Harriet Tubman', 'Rosa Parks', 'Lena Horne'],
     // image:'https://',
+    region:'',
     answer: 'Harriet Tubman',
   },
   {
     id: 22,
     type: 'multiple choice',
+    question: `American sociologist, socialist, historian, civil rights activist, Pan-Africanist, author, writer and editor
+    founders of the National Association for the Advancement of Colored People (NAACP) and from 1910 to 1934`,
+    options: ['William Edward Burghardt Du Bois', 'Booker T. Washington', 'Frederick Douglass', 'Barack Obama'],
+    // image:'https://',
+    region:'',
+    answer: 'William Edward Burghardt Du Bois',
+  },
+  {
+    id: 23,
+    type: 'multiple choice',
     question: `American social reformer, abolitionist, orator, writer, and statesman.
     Published North Star, a nineteenth-century anti-slavery newspaper`,
     options: ['Frederick Douglass', 'W.E. Du Bois', 'Booker T. Washington', 'Will Smith'],
     // image:'https://',
+    region:'',
     answer: 'Frederick Douglass',
   },
   {
-    id: 23,
+    id: 24,
     type: 'multiple choice',
     question: `American educator, author, orator, and adviser to multiple presidents of the United States
     Founder of Tuskegee University
     Book : Up From Slavery`,
     options: ['Frederick Douglass', 'W.E.B. Du Bois', 'Booker T. Washington', 'Barack Obama'],
     // image:'https://',
+    region:'',
     answer: 'Booker T. Washington',
-  },
-  {
-    id: 24,
-    type: 'multiple choice',
-    question: `Actor & Singer Wildly successful actor with eight straight #1 films at the box office; "The Fresh Prince" also won 2 Grammy Awards for his musical talents`,
-    options: ['Tiger Woods', 'Louis Armstrong', 'Will Smith', 'Martin Luther King Jr'],
-    // image:'https://',
-    answer: 'Will Smith',
   },
   {
     id: 25,
     type: 'multiple choice',
-    question: `Her act of defiance made her an international icon in the fight against racial segregation and sparked the Montgomery Bus Boycott`,
-    options: ['Maya Angelou', 'Rosa Parks', 'Madam C.J. Walker', 'Toni Morrison'],
+    question: `Actor & Singer Wildly successful actor with eight straight #1 films at the box office; "The Fresh Prince" also won 2 Grammy Awards for his musical talents`,
+    options: ['Tiger Woods', 'Louis Armstrong', 'Will Smith', 'Martin Luther King Jr'],
     // image:'https://',
-    answer: 'Rosa Parks',
+    region:'',
+    answer: 'Will Smith',
   },
   {
     id: 26,
     type: 'multiple choice',
-    question: ` I have a dream, that my four little children will one day live in a nation where they will not be judged by the color of their skin, but by the content of their character`,
-    options: ['Rev. Martin Luther King Jr.', 'Langston Hughes', 'Charles Houston', 'Oprah Winfrey'],
+    question: `Her act of defiance made her an international icon in the fight against racial segregation and sparked the Montgomery Bus Boycott`,
+    options: ['Maya Angelou', 'Rosa Parks', 'Madam C.J. Walker', 'Toni Morrison'],
     // image:'https://',
-    answer: 'Rev. Martin Luther King Jr.',
+    region:'',
+    answer: 'Rosa Parks',
   },
   {
     id: 27,
     type: 'multiple choice',
-    question: `Considered the Greatest to ever play the game, "His Airness" was also one of the most marketed sports figures in history.`,
-    options: ['Hank Aaron', 'Jackie Robinson', 'Jackie Robinson', 'Michael Jordan'],
+    question: ` I have a dream, that my four little children will one day live in a nation where they will not be judged by the color of their skin, but by the content of their character`,
+    options: ['Rev. Martin Luther King Jr.', 'Langston Hughes', 'Charles Houston', 'Oprah Winfrey'],
     // image:'https://',
-    answer: 'Michael Jordan',
+    region:'',
+    answer: 'Rev. Martin Luther King Jr.',
   },
+  // {
+  //   id: 27,
+  //   type: 'multiple choice',
+  //   question: `Considered the Greatest to ever play the game, "His Airness" was also one of the most marketed sports figures in history.`,
+  //   options: ['Hank Aaron', 'Jackie Robinson', 'Jackie Robinson', 'Michael Jordan'],
+  //   // image:'https://',
+  //   answer: 'Michael Jordan',
+  // },
   // {
   //   id: 28,
   //   type: 'multiple choice',
@@ -425,6 +460,7 @@ export const blackhistoryData = [
     options: ['True', 'False'],
     image: 'https://upload.wikimedia.org/wikipedia/commons/6/60/Lenke_djembe_from_Mali.jpeg',
     answer: 'True',
+    region:'',
     description: `The djembe is one of West Africa's best known instruments. This goblet-shaped drum is traditionally carved from a single piece of African hardwood and topped with an animal skin as a drumhead. In western understanding, the drum belongs to the membranophone class of instruments in the percussion family.`
   },
   {
@@ -434,6 +470,7 @@ export const blackhistoryData = [
     options: ['True', 'False'],
     image: 'https://www.wvxu.org/sites/wvxu/files/styles/x_large/public/201702/Blues_logo2.png',
     answer: 'False',
+    region:'',
     description: `Blues is the right answer. African Americans make up the single largest racial minority in the United States. From slave era field hollers, spirituals, and gospel, to blues, soul, and hip-hop, American musical culture abounds with the influence of African American song.`
   },
   {
@@ -443,6 +480,7 @@ export const blackhistoryData = [
     options: ['True', 'False'],
     image: 'https://i.pinimg.com/originals/c6/83/85/c683855d33667cc885fc10b72f7d6c49.jpg',
     answer: 'True',
+    region:'',
     description: `James Brown, an increased social consciousness was a natural evolution of his music. “Soul is when a man has to struggle all his life to be equal to another man,” the singer declared. “Soul is when a man plays taxes and still he comes up second. Soul is when a man is judged not for what they do, but what color they are.”`
   },
   {
@@ -452,6 +490,7 @@ export const blackhistoryData = [
     options: ['True', 'False'],
     image: 'https://www.telegramnews.net/home/cms_data/dfault/photos/stories/id/8/3/883/.TEMP/s_topTEMP425x425-9251.jpeg',
     answer: 'false',
+    region:'',
     description: `Lift Every Voice and Sing – often called “The Black National Anthem” – was written as a poem by NAACP leader James Weldon Johnson (1871-1938) and then set to music by his brother John Rosamond Johnson (1873-1954) in 1899. It was first performed in public in the Johnsons’ hometown of Jacksonville, Florida as part of a celebration of Lincoln’s Birthday on February 12, 1900 by a choir of 500 schoolchildren at the segregated Stanton School, where James Weldon Johnson was principal. (Scroll for more about Johnson below.)`
   },
   {
@@ -461,6 +500,7 @@ export const blackhistoryData = [
     options: ['True', 'False'],
     image: 'https://static01.nyt.com/images/2014/05/28/multimedia/maya-angelou-death/maya-angelou-death-videoSixteenByNine1050.jpg',
     answer: 'False',
+    region:'',
     description: `Maya Angelou was a civil rights activist, poet and award-winning author known for her acclaimed 1969 memoir, 'I Know Why the Caged Bird Sings,' and her numerous poetry and essay collections.`
   },
   {
