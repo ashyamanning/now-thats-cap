@@ -11,16 +11,13 @@ const CategoryHome = () => {
         <div className="catHomeMain">
 
             <div className="catHomeLogoDiv">
-                <h1 className="catHomeLogo"> #NowThatsCap</h1>
+                <h1 className="catHomeLogo"> Choose a Category </h1>
             </div>
 
             <div className="catHomeCat">
                 <Categories/>
             </div>
 
-            <div className="catHomeRandBtn">
-                <RandomizeBtn/>
-            </div>
         </div>
     )
 }
