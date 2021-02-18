@@ -20,7 +20,12 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background: var(--darkblue);
+  background-image:url('../../../assets/fistLogo.png');
+  /* background-image:url('../../../assets/nowthatscap.png'); */
+  /* background-image:url('../../../assets/blackfactseditionlogo.png'); */
 }
+
 .results_container .MuiPaper-root {
   background-color: #ff7b00fa;
   background-image: linear-gradient(to right,#15616D , #1d7b8a,#165a64);

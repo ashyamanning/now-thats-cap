@@ -4,7 +4,7 @@
 }
 
 .question-main-container {
-    background: pink;
+    /* background: pink; */
     height: 150px;
     width: 190px;
     border-radius: 1rem;
@@ -45,6 +45,8 @@
     padding-left: 1%;
     text-align: center;
     box-shadow: 1px 1px 5px 6px #FFECD1;
+    height: 85vh;
+    overflow-x: scroll;
 }
 
 .question-styling {
