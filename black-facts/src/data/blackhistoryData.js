@@ -7,7 +7,7 @@ export const blackhistoryData = [
     options: ['Oprah Winfrey', 'Michelle Obama', 'Aretha Franklin', 'Janet Jackson'],
     image: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Aretha_Franklin_1968.jpg',
     answer: 'Aretha Franklin',
-    region:'',
+    region:'U.S.A.',
     description: `Aretha Franklin became the first female artist to be inducted into the Rock and Roll Hall of Fame in 1987. She is one of the most honored artists in Grammy Award history, winning her 18th honor in 2008.`
   },
   {
@@ -17,7 +17,7 @@ export const blackhistoryData = [
     options: ['Hattie McDaniel', 'Halle Berry', 'Viola Davis', 'Kerry Washington'],
     image: 'https://media.vanityfair.com/photos/6026c33eb3de5e8d0957c3f9/master/w_2560%2Cc_limit/908537162',
     answer: 'Halle Berry',
-    region:'',
+    region:'U.S.A.',
     description: `Halle Berry is the first African American to win the Academy Award for best actress. She received the honour for her nuanced portrayal of Leticia Musgrove, a down-on-her-luck character in Monster’s Ball (2001).`
   },
   {
@@ -27,7 +27,7 @@ export const blackhistoryData = [
     options: ['Ella Fitzgerald', 'Ray Charles', 'Beyonce', 'James Brown'],
     image: 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTIwNjA4NjMzNzU0ODQ2NzMy/james-brown-9228350-1-402.jpg',
     answer: 'James Brown',
-    region:'',
+    region:'U.S.A.',
     description: `James Brown, the "Godfather of Soul," was a prolific singer, songwriter and bandleader, as well as one of the most iconic figures in funk and soul music.`
   },
   {
@@ -37,7 +37,7 @@ export const blackhistoryData = [
     options: ['Blues', 'Soul', 'R&B', 'Rap'],
     image: 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY2OTU1MzIzNzkyMzAzMTIz/bb_king_photo_onekindfa_305rgbbbking_universal_music_group_promojpg.jpg',
     answer: 'Blues',
-    region:'',
+    region:'U.S.A.',
     description: `"King of the Blues" B.B. King began as a disc jockey in Memphis before finding fame as a blues and R&B guitarist, with hits like "The Thrill Is Gone."`
   },
   {
@@ -47,7 +47,7 @@ export const blackhistoryData = [
     options: ['The Vandellas', 'The Marvelettes', 'The Supremes', 'The Hansens'],
     image: 'https://i.guim.co.uk/img/media/e6a1894c23d39be82881327fab1657ebb577a234/161_237_1568_940/master/1568.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=377bc193b9f8651889c61c5e33d8c9e1',
     answer: 'The Supremes',
-    region:'',
+    region:'U.S.A.',
     description: `The Supremes were the most commercially successful of Motown's acts. They are, to date, America's most successful vocal group.`
   },
 
@@ -58,7 +58,7 @@ export const blackhistoryData = [
     options: ['Sidney Poitier', 'Morgan Freeman', 'James Earl Jones', 'Ice Cube'],
     image: 'https://www.veteransadvantage.com/sites/default/files/styles/node_image/public/nodes/assets/wordpress-medal-obama-poitier-42-23115776.jpg?itok=XHQU2lFX',
     answer: 'Sidney Poitier',
-    region:'',
+    region:'U.S.A.',
     description: `Not many Academy Award-winning actors started out as immigrant teens washing dishes. But Sidney Poitier, a young orphan desperate to emerge from poverty and make something of himself, faced his raw beginnings by joining the U.S. Army and has made history as a trailblazing actor ever since.`
   },
   {
@@ -68,7 +68,7 @@ export const blackhistoryData = [
     options: ['Art Deco', '2nd Period', 'Reconstruction', 'Harlem Renaissance'],
     image: 'https://www.buala.org/sites/default/files/imagecache/full/2020/04/harlem-renaissance_0.jpg',
     answer: 'Harlem Renaissance',
-    region:'',
+    region:'U.S.A.',
     description: `The Harlem Renaissance was the development of the Harlem neighborhood in New York City as a Black cultural mecca in the early 20th Century and the subsequent social and artistic explosion that resulted. Lasting roughly from the 1910s through the mid-1930s, the period is considered a golden age in African American culture, manifesting in literature, music, stage performance and art.`
   },
   {
@@ -78,7 +78,7 @@ export const blackhistoryData = [
     options: ['Aretha Franklin', 'Alex Haley', 'Hattie McDaniel', 'James Brown'],
     image: 'https://news.stthomas.edu/wp-content/uploads/2014/02/140203mej159_001.jpg',
     answer: 'Alex Haley',
-    region:'',
+    region:'U.S.A.',
     description: `Alex Haley was a writer whose works of historical fiction and reportage depicted generations of African American lives. He is widely known for 'Roots' and 'The Autobiography of Malcolm X.' “Either you deal with what is the reality, or you can be sure that the reality is going to deal with you.”
     —Alex Haley`
   },
@@ -89,7 +89,7 @@ export const blackhistoryData = [
     options: ['Alice Walker', 'Sarah Vaughan', 'Sojourner Truth', 'Ms. Tanksley'],
     image: 'https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/JxhS1iU4Xwyr8ry8AqwMaUrlzqc=/1660x934/smart/filters:no_upscale()/arc-anglerfish-arc2-prod-dmn.s3.amazonaws.com/public/MGDTEAZ7GDDZEMZNZFERF7BMLI.jpg',
     answer: 'Sarah Vaughan',
-    region:'',
+    region:'U.S.A.',
     description: `The power, range, and flexibility of her voice made Sarah Vaughan, known as "Sassy" or "The Divine One," one of the great singers in jazz.`
   },
   {
@@ -99,7 +99,7 @@ export const blackhistoryData = [
     options: ['Alice Walker', 'Sarah Vaughan', 'Ms. Evans', 'Oprah Winfrey'],
     image: 'https://dailynorthwestern.com/wp-content/uploads/2018/10/WALKER-Courtesy-WEB-900x600.jpg',
     answer: 'Alice Walker',
-    region:'',
+    region:'U.S.A.',
     description: `Walker is a feminist and vocal advocate for human rights, and she has earned critical and popular acclaim as a major American novelist and intellectual. Her literary reputation was secured with her Pulitzer Prize-winning third novel, The Color Purple (1982).`
   },
   {
@@ -108,8 +108,9 @@ export const blackhistoryData = [
     question: `Who spoke out the for freedom of slaves, equal rights for women and was the first black person to be nominated for Vice President of the United States?`,
     options: ['Nat Turner', 'Colin Kaepernick', 'Frederick Douglass', 'Letitia Wood Brown'],
     // image:'https://',
-    region:'',
+    region:'U.S.A.',
     answer: 'Frederick Douglass',
+    description:`To counter skeptics who doubted that such an articulate spokesman could ever have been a slave, Douglass felt impelled to write his autobiography in 1845, revised and completed in 1882 as Life and Times of Frederick Douglass.`
   },
   {
     id: 12,
@@ -119,6 +120,7 @@ export const blackhistoryData = [
     // image:'https://',
     region:'',
     answer: 'Nat Turner',
+    description:`While still a young child, Nat was overheard describing events that had happened before he was born. This, along with his keen intelligence, and other signs marked him in the eyes of his people as a prophet "intended for some great purpose." `
   },
   {
     id: 13,
@@ -126,8 +128,9 @@ export const blackhistoryData = [
     question: `The first African-American child to attend an all-white school in Louisiana in 1960 sparking the end of segregation in American schools.`,
     options: ['Viola Desmond', 'Ruby Bridges', 'Rosa Parks', 'Marcus Garvey'],
     // image:'https://',
-    region:'',
+    region:'U.S.A.',
     answer: 'Ruby Bridges',
+    description:`Ruby spent her first day in the principal’s office due to the chaos created as angry white parents pulled their children from school.`
   },
   {
     id: 14,
@@ -135,8 +138,9 @@ export const blackhistoryData = [
     question: `This individual had himself shipped in a box from Virginia to Pennsylvania - a state where he would be a free individual.`,
     options: ['Henry Brown', 'Marcus Garvey', 'Nat Turner', 'Tarana Burke'],
     // image:'https://',
-    region:'',
+    region:'U.S.A.',
     answer: 'Henry Brown',
+    description:`Upon the box being opened, Brown said, “How do you do, Gentlemen?” then recited a psalm: “I waited patiently on the Lord and He heard my prayer.”`
   },
   {
     id: 15,
@@ -144,8 +148,9 @@ export const blackhistoryData = [
     question: `This individual sparked the Black Lives Matter movement.`,
     options: ['Taran Burke', 'Maya Angelou', 'Letitia Wood Brown', 'Colin Kaepernick'],
     // image:'https://',
-    region:'',
+    region:'U.S.A.',
     answer: 'Colin Kaepernick',
+    description:``
   },
   {
     id: 16,
@@ -155,6 +160,7 @@ export const blackhistoryData = [
     // image:'https://',
     region:'',
     answer: 'Aretha Franklin',
+    description:``
   },
   {
     id: 17,
@@ -164,6 +170,7 @@ export const blackhistoryData = [
     // image:'https://',
     region:'',
     answer: 'Maya Angelou',
+    description:``
   },
   {
     id: 18,
@@ -173,6 +180,7 @@ export const blackhistoryData = [
     // image:'https://',
     region:'',
     answer: 'Letitia Wood Brown',
+    description:``
   },
   {
     id: 19,
@@ -182,6 +190,7 @@ export const blackhistoryData = [
     // image:'https://',
     region:'',
     answer: 'Tarana Burke',
+    description:``
   },
   {
     id: 20,
@@ -191,6 +200,7 @@ export const blackhistoryData = [
     // image:'https://',
     region:'',
     answer: 'Michael Jordan',
+    description:``
   },
    {
     id: 21,
@@ -200,6 +210,7 @@ export const blackhistoryData = [
     // image:'https://',
     region:'',
     answer: 'Harriet Tubman',
+    description:``
   },
   {
     id: 22,
@@ -210,6 +221,7 @@ export const blackhistoryData = [
     // image:'https://',
     region:'',
     answer: 'William Edward Burghardt Du Bois',
+    description:``
   },
   {
     id: 23,
@@ -220,6 +232,7 @@ export const blackhistoryData = [
     // image:'https://',
     region:'',
     answer: 'Frederick Douglass',
+    description:``
   },
   {
     id: 24,
@@ -231,6 +244,7 @@ export const blackhistoryData = [
     // image:'https://',
     region:'',
     answer: 'Booker T. Washington',
+    description:``
   },
   {
     id: 25,
@@ -240,6 +254,7 @@ export const blackhistoryData = [
     // image:'https://',
     region:'',
     answer: 'Will Smith',
+    description:``
   },
   {
     id: 26,
@@ -249,6 +264,7 @@ export const blackhistoryData = [
     // image:'https://',
     region:'',
     answer: 'Rosa Parks',
+    description:``
   },
   {
     id: 27,
@@ -258,6 +274,7 @@ export const blackhistoryData = [
     // image:'https://',
     region:'',
     answer: 'Rev. Martin Luther King Jr.',
+    description:``
   },
   // {
   //   id: 27,
