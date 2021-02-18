@@ -5,8 +5,10 @@ import categoryData from '../../data/categoryData';
 import styled, { css } from 'styled-components/macro';
 import { Link, useHistory } from 'react-router-dom';
 // import { IoMdArrowRoundForward } from 'react-icons/io';
-import { IoArrowForward, IoArrowBack} from 'react-icons/io5';
-import './Css/categories.css'
+// import { IoArrowForward, IoArrowBack} from 'react-icons/io5';
+import './Css/categories.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Background } from '../'
 
 
 // const arrowButtons = css `
@@ -35,6 +37,12 @@ import './Css/categories.css'
 //     ${arrowButtons}
 // `;
 
+const sectionStyle = {
+  width: "100%",
+  height: "400px",
+//   backgroundImage: "url(" + { Background } + ")"
+};
+
 const Categories = () => {
 
     const dispatch = useDispatch();
@@ -46,6 +54,30 @@ const Categories = () => {
         debugger
         history.push('/play')
     }
+
+//     <script>
+//     var swiper = new Swiper('.swiper-container', {
+//       effect: 'coverflow',
+//       grabCursor: true,
+//       centeredSlides: true,
+//       slidesPerView: 'auto',
+//       coverflowEffect: {
+//         rotate: 50,
+//         stretch: 0,
+//         depth: 100,
+//         modifier: 1,
+//         slideShadows: true,
+//       },
+//      loop: true,
+//       autoplay:{
+//        delay: 500,
+//         disableInteration: false;
+//        },
+//       pagination: {
+//         el: '.swiper-pagination',
+//       },
+//     });
+//   </script>
 
 
     // const [current, setCurrent] = useState(0);
@@ -85,108 +117,38 @@ const Categories = () => {
     // }
     return (
         <div className="categoriesMain">
-            <section className="categories-main-sect"> 
-                <div> 
-                    <ul className="categoriesUL">
-                        {categoryData.map((item, index) => (
-                            <li key={item.id} className="categoriesLI">
-                                <button className="catBtn" value={item.title} onClick={handleClick}>
-                                    <Link className="catLink" type="button" to={item.link} key={item.id}>
-                                        {item.title}
-                                    </Link>
-                                </button>
-                            </li>
-                        ))}
-                    </ul>
+
+        {/* <Swiper
+        spaceBetween={50}
+        slidesPerView={3}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
+        >    */}
+    
+            <section class="swiper-container" /*className="categories-main-sect"*/> 
+                <div class="swiper-wrapper">   
+                    {categoryData.map((item, index) => (
+                        <div class="swiper-slide">
+                            <button className="catBtn" value={item.title} onClick={handleClick}>
+                                <Link className="catLink" type="button" to={item.link} key={item.id}>
+                                    {item.title}
+                                </Link>
+                            </button>
+ 
+                        </div>   
+                    ))}
                 </div>
-                <div className="building-progress-bar">
-                    <div>
-                        <div> 
-                        </div>
-                    </div>
-                    <ul> 
-                        <li style={{marginTop:'3%'}} className="building-li"> 
-                            <button className="building-button"> 
-                                <div>
-                                    <div> 
-                                        <picture> 
-                                            <source/>
-                                        </picture>
-                                        <img/>
-                                    </div> 
-                                </div>
-                            </button>
-                        </li>
 
-                        <li className="building-li"> 
-                            <button className="building-button"> 
-                                <div>
-                                    <div> 
-                                        <picture> 
-                                            <source/>
-                                        </picture>
-                                        <img/>
-                                    </div> 
-                                </div>
-                            </button>
-                        </li>
-
-                        <li className="building-li"> 
-                            <button className="building-button"> 
-                                <div>
-                                    <div> 
-                                        <picture> 
-                                            <source/>
-                                        </picture>
-                                        <img/>
-                                    </div> 
-                                </div>
-                            </button>
-                        </li>
-
-                        <li className="building-li"> 
-                            <button className="building-button"> 
-                                <div>
-                                    <div> 
-                                        <picture> 
-                                            <source/>
-                                        </picture>
-                                        <img/>
-                                    </div> 
-                                </div>
-                            </button>
-                        </li>
-
-                        <li className="building-li"> 
-                            <button className="building-button"> 
-                                <div>
-                                    <div> 
-                                        <picture> 
-                                            <source/>
-                                        </picture>
-                                        <img/>
-                                    </div> 
-                                </div>
-                            </button>
-                        </li>
-
-                        <li className="building-li"> 
-                            <button className="building-button"> 
-                                <div>
-                                    <div> 
-                                        <picture> 
-                                            <source/>
-                                        </picture>
-                                        <img/>
-                                    </div> 
-                                </div>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
             </section>
         </div>
     )
 }
 
 export default Categories
+
+
+// <button /*className="catBtn"*/ value={item.title} onClick={handleClick}>
+//                                 <Link /*className="catLink"*/ type="button" to={item.link} key={item.id}>
+//                                     {item.title}
+//                                 </Link>
+//                             </button>

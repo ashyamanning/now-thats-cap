@@ -13,7 +13,6 @@ import './css/playgame.css'
 
 const PlayGame = () => {
     const category = useSelector(state => state.category);
-    const score = useSelector(state => state.score)
     // local state of questions to be mapped through
     const [questions, setQuestions] = useState([]);
 
@@ -38,8 +37,7 @@ const PlayGame = () => {
             } else if (str === "Art") {
                 fetchHelper(artData)
             } else if (str === "Countries") {
-                fetchHelper(countriesData)
-                
+                fetchHelper(countriesData)   
             } else if (str === "Food") {
                 fetchHelper(foodData)
             }
@@ -49,7 +47,7 @@ const PlayGame = () => {
     return (
         <div className="mainGameBoard">
             {questionCards}
-            {score}
+            
         </div>
     )
 }
