@@ -40,84 +40,96 @@ const Menu = () => {
     }, [])
     return (
         <div className="menuPage">
-            <h1>
+            {/* <h1>
                     MAIN MENU
-                </h1>
-            <div className="container">
+                </h1> */}
+            <div className="main-menu-container">
+
                 <div className="row cardContainer">
                     <div className="col">
-                <div className="card  menuCard">
-                <img className="card-img-top imageTop" src={fist} alt="Card image cap"/>
-                <div className="card-body">
-                <p className="card-text cardDescription">{soloDescription.description}</p>
-                <div className="buttonDiv" >
-                    <MenuButton description={soloDescription} target={soloTarget}/>
-                </div>
-                </div>
-                </div>
+                        <div className="card  menuCard">
+                            <img className="card-img-top imageTop" src={fist} alt="Card image cap"/>
+                            <div className="card-body">
+                                <p className="card-text cardDescription">{soloDescription.description}</p>
+                                <div className="buttonDiv" >
+                                    <MenuButton description={soloDescription} target={soloTarget}/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
                     <div className="col">
-                <div className="card  menuCard">
-                <img className="card-img-top imageTop" src={fist} alt="Card image cap"/>
-                <div className="card-body">
-                <p className="card-text cardDescription">{multiDescription.description}</p>
-                <div className="buttonDiv">
-                    <MenuButton description={multiDescription} target={multiTarget}/>
-                </div>
-                </div>
-                </div>
-                </div>
+                        <div className="card  menuCard">
+                            <img className="card-img-top imageTop" src={fist} alt="Card image cap"/>
+                            <div className="card-body">
+                                <p className="card-text cardDescription">{multiDescription.description}</p>
+                                <div className="buttonDiv">
+                                    <MenuButton description={multiDescription} target={multiTarget}/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="container aboutUsContainer">
+                </div>
+
+
+                <div className="container aboutUsContainer about-us-div">
                     <div className="jumbotron aboutUs justify-content-center">
                         <h1 className="display-5 aboutUsTitle">ABOUT US</h1>
                         <ul>
                             <div className={"row"}>
-                            <div className={"col imageContainer"}>     
-                            <li className="aboutMeList">
-                                <img src={ashya} alt={"ashya manning"} className={"aboutTeam"}/>
-                                <p>Tech Lead: Ashya Manning </p>
-                                </li>
-                                </div>
-                                <div className={"col imageContainer"}>    
-                            <li className="aboutMeList">
-                                <img src={uduakabasi} alt={"ashya manning"} className={"aboutTeam"}/>
-                                <p>UI/UX Manager: Uduakabasi Abasiurua</p>
-                                </li>
+                                <div className={"col imageContainer"}>     
+                                    <li className="aboutMeList">
+                                        <img src={ashya} alt={"ashya manning"} className={"aboutTeam"}/>
+                                        <p style={{textDecoration: 'underline'}}>Tech Lead</p>
+                                        <a style={{color: '#fff'}} href="https://www.linkedin.com/in/ashyalmanning/">Ashya Manning</a>
+                                    </li>
                                 </div>
 
                                 <div className={"col imageContainer"}>    
-                            <li className="aboutMeList">
-                            <img src={sihame} alt={"ashya manning"} className={"aboutTeam"}/>
-                                <p>PR Manager: Sihame Bazi</p>
-                                </li>
+                                    <li className="aboutMeList">
+                                        <img src={uduakabasi} alt={"ashya manning"} className={"aboutTeam"}/>
+                                        <p style={{textDecoration: 'underline'}}>UI/UX Manager</p>
+                                        <a style={{color: '#fff'}} href="https://www.linkedin.com/in/uduakabasi-abasiurua/">Uduakabasi Abasiurua</a>
+                                    </li>
                                 </div>
 
                                 <div className={"col imageContainer"}>    
-                            <li className="aboutMeList">
-                            <img src={johanne} alt={"ashya manning"} className={"aboutTeam"}/>
-                                <p>PR Manager: Johanne Enama</p>
-                                </li>
+                                    <li className="aboutMeList">
+                                        <img src={sihame} alt={"ashya manning"} className={"aboutTeam"}/>
+                                        <p style={{textDecoration: 'underline'}}>PR Manager</p>
+                                        <a style={{color: '#fff'}} href="https://www.linkedin.com/in/sihame-bazi/">Sihame Bazi</a>
+                                    </li>
                                 </div>
 
                                 <div className={"col imageContainer"}>    
-                            <li className="aboutMeList">
-                            <img src={marvin} alt={"ashya manning"} className={"aboutTeam"}/>
-                                <p>Project Manager: Marvin Thompson</p>
-                                </li>
+                                    <li className="aboutMeList">
+                                        <img src={johanne} alt={"ashya manning"} className={"aboutTeam"}/>
+                                        <p style={{textDecoration: 'underline'}}>PR Manager</p>
+                                        <a style={{color: '#fff'}} href="https://www.linkedin.com/in/johanne-enama/">Johanne Enama</a>
+                                    </li>
+                                </div>
+
+                                <div className={"col imageContainer"}>    
+                                    <li className="aboutMeList">
+                                        <img src={marvin} alt={"ashya manning"} className={"aboutTeam"}/>
+                                        <p style={{textDecoration: 'underline'}}>Project Manager</p>
+                                        <a style={{color: '#fff'}} href="https://www.linkedin.com/in/marvinjthompson/">Marvin Thompson</a>
+                                    </li>
                                 </div>
                             </div>
                         </ul>
                         <p className="lead">
                         <div className="jumboButtonDiv">
-                        <a className="btn btn-primary btn-lg btn-block backToHomeMenu" href="#" role="button" onClick={() => history.push('/')}>Back to home</a>
+                            <a className="btn btn-primary btn-lg btn-block backToHomeMenu" href="#" role="button" onClick={() => history.push('/')}>Back to home</a>
                         </div>
                         </p>
                     </div>
-                    </div>
+                </div>
             </div>
+
             <SoloTeamNameForm />
-          <MultiplayerTeamNameForm />
+            <MultiplayerTeamNameForm />
         </div>
     )
 }
