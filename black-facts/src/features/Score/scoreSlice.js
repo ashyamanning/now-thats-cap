@@ -1,13 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 export const scoreSlice = createSlice({
     name: "score",
-    initialState: 0,
+    initialState:  0,
     reducers: {
-        addScore: (state) => state++,
-        clearScore: (state) => 0
-    }
+        clearScore: (state) => 0,
+        addScore : (state) => {
+            return state++
+        }
+    },
+
 })
 
+
 export const currentScore = (state) => state.score
-export const {addScore, clearScore} = scoreSlice.actions
+export const { addScore, clearScore} = scoreSlice.actions
 export default scoreSlice.reducer
