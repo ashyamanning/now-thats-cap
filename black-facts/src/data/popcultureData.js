@@ -60,7 +60,7 @@ export const popcultureData = [
         options: ["The Jungle Book", "Daddy’s Girls", "Obsessed", "The Wire"],
         answer: "The Wire",
         region:'U.S.A',
-        description: ``
+        description: `Russell "Stringer" Bell is a fictional character in The Wire, played by Idris Elba.`
     },
     {
         id: 8,
