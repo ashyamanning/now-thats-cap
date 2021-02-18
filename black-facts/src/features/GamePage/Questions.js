@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import foodData from "../../data/foodData";
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import Answer from './Answer'
-import {useDispatch} from 'react-redux'
-import { addScore }  from '../Score/scoreSlice'
-
-
+import { useDispatch } from 'react-redux'
+import {
+   addScore,
+   clearScore,
+   incrementByAmount 
+}  from '../Score/scoreSlice'
+import selectCount from "../Score/scoreSlice"
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -49,15 +51,11 @@ export default function Questions({ question }) {
     console.log('choice', e.target.value)
   }
 
-  const increment = () => {
-    dispatch(addScore())
-  }
-
   const handleSubmit = () => {
      alert(`Submitting Name ${selectOption}`)
      if (selectedAnswer === question.answer) {
        debugger
-       increment()
+       dispatch(addScore())
        debugger
      }
      // if correct, score ++
