@@ -8,6 +8,10 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background: var(--tan);
+    background-image:url('../../../assets/fistLogo.png');
+    /* background-image:url('../../../assets/nowthatscap.png'); */
+    /* background-image:url('../../../assets/blackfactseditionlogo.png'); */
 }
 
 .questions-section {

@@ -9,14 +9,16 @@ const CategoryHome = () => {
 
     return (
         <div className="catHomeMain">
+            {/* <div className="cat-home-sub-contain">  */}
+                <div className="catHomeLogoDiv">
+                    <h1 className="catHomeLogo"> Select a Category </h1>
+                </div>
 
-            <div className="catHomeLogoDiv">
-                <h1 className="catHomeLogo"> Choose a Category </h1>
-            </div>
+                <div className="catHomeCat">
+                    <Categories/>
+                </div>
+            {/* </div> */}
 
-            <div className="catHomeCat">
-                <Categories/>
-            </div>
 
         </div>
     )
