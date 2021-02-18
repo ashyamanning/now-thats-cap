@@ -29,7 +29,7 @@ const App = () => {
         </Route>
         <Route path={"/play"}>
           <Game/>
-          <Score />
+          {/* <Score/> */}
         </Route>
         <Route path={"/results"}>
           <Results/>
