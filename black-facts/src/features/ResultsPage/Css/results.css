@@ -27,11 +27,17 @@
 
 .display_winners {
   margin: 0 10%;
+  display: contents;
 }
 
 .winner_score_text {
   text-align: start;
-  margin: 6%;
+  margin: 4% 0 4% 6%;
+  display: flex;
+}
+
+.spanScore {
+  margin: 0% 2% 0 2%;
 }
 
 .buttonDiv {
