@@ -6,18 +6,67 @@
     --burgandy: #78290F;
 }
 
+.menuPage {
+    width: 100vw;
+    height: 100vh;
+    background: var(--darkblue);
+    background-image:url('../../../assets/nowthatscap.png');
+    text-align: center;
+    background-attachment: fixed; 
+    background-repeat: repeat;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main-menu-container  {
+    padding: 1%;
+    width: 80vw;
+    height: 95vh;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    border-radius: 1rem;
+    border-top-left-radius: 1rem;
+    
+}
+
+.main-menu-container:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+    border-radius: 1rem;
+    overflow-y: scroll;
+}
+
 .buttonDiv {
     margin: 10px;
 }
 
 .aboutUsContainer {
-    margin-top: 15px;
+    margin-top: 40px;
+}
+
+.about-us-div {
+    overflow-y: scroll !important; 
+    height: 350px;
 }
 
 .aboutMeList {
     list-style: none;
     color: #fff;
-   
 }
 
 .imageContainer {
@@ -31,7 +80,7 @@
 .imageTop {
     height: auto;
     max-width: 200px;
-    max-height: 200px;
+    max-height: 165px;
     margin: auto;
 }
 
@@ -46,6 +95,7 @@
 }
 .aboutUsTitle {
     color: #fff !important;
+    margin-top: -30px;
 }
 .menuPage {
     height: 100vh;
@@ -63,6 +113,7 @@
     margin-top: 1.5%;
     box-shadow: 2px 1px 5px 6px #15616d;
     background: #001524;
+    height: 290px !important;
 }
 
 .backToHomeMenu {

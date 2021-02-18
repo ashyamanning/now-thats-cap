@@ -11,6 +11,14 @@
     text-align: center;
     justify-content: center;
     overflow: hidden;
+    background: var(--tan);
+    background-image:url('../../../assets/fistLogo.png');
+    /* background-image:url('../../../assets/nowthatscap.png'); */
+    /* background-image:url('../../../assets/blackfactseditionlogo.png'); */
+    
+    text-align: center;
+    background-attachment: fixed; 
+    background-repeat: repeat;
 }
 
 .catHomeLogoDiv {
@@ -25,7 +33,9 @@
 }
 
 .catHomeLogo {
-    font-size: 80px; 
+    font-size: 70px; 
+    font-style: italic;
+    color: var(--darkblue)
 }
 
 .catHomeCat {
