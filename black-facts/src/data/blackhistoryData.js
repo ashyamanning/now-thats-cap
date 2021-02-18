@@ -167,13 +167,12 @@ export const blackhistoryData = [
   {
     id: 20,
     type: 'multiple choice',
-    question: `American sociologist, socialist, historian, civil rights activist, Pan-Africanist, author, writer and editor
-    founders of the National Association for the Advancement of Colored People (NAACP) and from 1910 to 1934`,
-    options: ['William Edward Burghardt Du Bois', 'Booker T. Washington', 'Frederick Douglass', 'Barack Obama'],
+    question: `Considered the Greatest to ever play the game, "His Airness" was also one of the most marketed sports figures in history.`,
+    options: ['Hank Aaron', 'Jackie Robinson', 'Jackie Robinson', 'Michael Jordan'],
     // image:'https://',
-    answer: 'William Edward Burghardt Du Bois',
+    answer: 'Michael Jordan',
   },
-  {
+   {
     id: 21,
     type: 'multiple choice',
     question: `Abolitionist Worked for the Union Army during the war and later became a leader in women's suffrage movement.Earned the nickname "Moses" after the prophet Moses in the Bible who led his people to freedom. In all of her journeys she "never lost a single passenger."`,
@@ -184,6 +183,15 @@ export const blackhistoryData = [
   {
     id: 22,
     type: 'multiple choice',
+    question: `American sociologist, socialist, historian, civil rights activist, Pan-Africanist, author, writer and editor
+    founders of the National Association for the Advancement of Colored People (NAACP) and from 1910 to 1934`,
+    options: ['William Edward Burghardt Du Bois', 'Booker T. Washington', 'Frederick Douglass', 'Barack Obama'],
+    // image:'https://',
+    answer: 'William Edward Burghardt Du Bois',
+  },
+  {
+    id: 23,
+    type: 'multiple choice',
     question: `American social reformer, abolitionist, orator, writer, and statesman.
     Published North Star, a nineteenth-century anti-slavery newspaper`,
     options: ['Frederick Douglass', 'W.E. Du Bois', 'Booker T. Washington', 'Will Smith'],
@@ -191,7 +199,7 @@ export const blackhistoryData = [
     answer: 'Frederick Douglass',
   },
   {
-    id: 23,
+    id: 24,
     type: 'multiple choice',
     question: `American educator, author, orator, and adviser to multiple presidents of the United States
     Founder of Tuskegee University
@@ -201,7 +209,7 @@ export const blackhistoryData = [
     answer: 'Booker T. Washington',
   },
   {
-    id: 24,
+    id: 25,
     type: 'multiple choice',
     question: `Actor & Singer Wildly successful actor with eight straight #1 films at the box office; "The Fresh Prince" also won 2 Grammy Awards for his musical talents`,
     options: ['Tiger Woods', 'Louis Armstrong', 'Will Smith', 'Martin Luther King Jr'],
@@ -209,7 +217,7 @@ export const blackhistoryData = [
     answer: 'Will Smith',
   },
   {
-    id: 25,
+    id: 26,
     type: 'multiple choice',
     question: `Her act of defiance made her an international icon in the fight against racial segregation and sparked the Montgomery Bus Boycott`,
     options: ['Maya Angelou', 'Rosa Parks', 'Madam C.J. Walker', 'Toni Morrison'],
@@ -217,21 +225,21 @@ export const blackhistoryData = [
     answer: 'Rosa Parks',
   },
   {
-    id: 26,
+    id: 27,
     type: 'multiple choice',
     question: ` I have a dream, that my four little children will one day live in a nation where they will not be judged by the color of their skin, but by the content of their character`,
     options: ['Rev. Martin Luther King Jr.', 'Langston Hughes', 'Charles Houston', 'Oprah Winfrey'],
     // image:'https://',
     answer: 'Rev. Martin Luther King Jr.',
   },
-  {
-    id: 27,
-    type: 'multiple choice',
-    question: `Considered the Greatest to ever play the game, "His Airness" was also one of the most marketed sports figures in history.`,
-    options: ['Hank Aaron', 'Jackie Robinson', 'Jackie Robinson', 'Michael Jordan'],
-    // image:'https://',
-    answer: 'Michael Jordan',
-  },
+  // {
+  //   id: 27,
+  //   type: 'multiple choice',
+  //   question: `Considered the Greatest to ever play the game, "His Airness" was also one of the most marketed sports figures in history.`,
+  //   options: ['Hank Aaron', 'Jackie Robinson', 'Jackie Robinson', 'Michael Jordan'],
+  //   // image:'https://',
+  //   answer: 'Michael Jordan',
+  // },
   // {
   //   id: 28,
   //   type: 'multiple choice',
