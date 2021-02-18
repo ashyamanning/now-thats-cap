@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
@@ -11,7 +12,6 @@ import {
    incrementByAmount 
 }  from '../Score/scoreSlice'
 import selectCount from "../Score/scoreSlice"
-
 const useStyles = makeStyles((theme) => ({
   modal: {
     display: 'flex',
@@ -25,32 +25,26 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2, 4, 3),
   },
 }));
-
 export default function Questions({ question }) {
   const classes = useStyles();
   const dispatch = useDispatch()
-
   const [open, setOpen] = React.useState(false);
   const [flip, setFlip] = useState(false)
   const [selectOption, setSelectOption] = useState('')
   const [selectedAnswer, setSelectedAnswer] = useState('')
-
   const handleClick = (e) => {
     setSelectedAnswer(e.target.value)
   }
   const handleOpen = () => {
     setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
   }; 
-
   const handleChange = (e) => {
     setSelectOption(e.target.value)
     console.log('choice', e.target.value)
   }
-
   const handleSubmit = () => {
      alert(`Submitting Name ${selectOption}`)
      if (selectedAnswer === question.answer) {
@@ -61,9 +55,7 @@ export default function Questions({ question }) {
      // if correct, score ++
      // after submitted, disable
   }
-
   return (
-    
     <div className='question'>
       <button className='front' type="button" onClick={handleOpen}>
         <label># BLACKFACTS</label>
@@ -83,10 +75,8 @@ export default function Questions({ question }) {
         <Fade in={open}>
           <div className={classes.paper}>
               {console.log(question.question)}
-              
                 <h2 id="transition-modal-title">{question.question}</h2>
                 <img src={question.image} width='300px'/>
-                
                 <div className='multiple-choice'>
                   {question.options.map((item, i) => {
                     return (
@@ -111,7 +101,6 @@ export default function Questions({ question }) {
                 </div>
                  
                 <div type="button" onClick={()=> setFlip(!flip)}>
-                 
                   {flip ? <Answer question={question}/> : <button type="button" onClick={handleSubmit}>Submit</button>}
                 </div>
           </div>
@@ -120,6 +109,3 @@ export default function Questions({ question }) {
     </div>
   );
 }
-
-
-

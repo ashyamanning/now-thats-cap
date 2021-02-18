@@ -15,18 +15,13 @@ export const scoreSlice = createSlice({
             state.value += action.payload;
           }
     },
-
 })
-
 export const incrementAsync = amount => dispatch => {
     setTimeout(() => {
       dispatch(incrementByAmount(amount));
     }, 1000);
   };
-
   export const selectCount = state => state.score.value;
-
-
 export const currentScore = (state) => state.score
 export const { addScore, clearScore, incrementByAmount} = scoreSlice.actions
 export default scoreSlice.reducer
