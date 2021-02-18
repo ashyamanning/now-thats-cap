@@ -8,14 +8,11 @@ import musicData from '../../data/musicData'
 import artData from '../../data/artData'
 import popcultureData from '../../data/popcultureData'
 import { useSelector } from 'react-redux';
-
 import './css/playgame.css'
-
 const PlayGame = () => {
     const category = useSelector(state => state.category);
     // local state of questions to be mapped through
     const [questions, setQuestions] = useState([]);
-
     //
     let questionCards = questions.map((el) => {
         return <Questions question={el}/>
@@ -48,9 +45,7 @@ const PlayGame = () => {
     return (
         <div className="mainGameBoard">
             {questionCards}
-            
         </div>
     )
 }
-
 export default PlayGame;
