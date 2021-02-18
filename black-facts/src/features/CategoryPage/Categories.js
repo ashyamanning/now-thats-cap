@@ -73,7 +73,7 @@ const Categories = () => {
                                             {item.title}
                                         </h1>
                                         <div className="select-btn-div">
-                                            <button to={item.link} className="select-btns" type="button" onClick={handleClick} key={item.id}> 
+                                            <button className="select-btns" type="button" onClick={handleClick} key={item.id} value={item.title}> 
                                                 <h3 className="style-btn"> Select Category </h3>
                                             </button>
                                         </div>
