@@ -8,16 +8,21 @@ import musicData from '../../data/musicData'
 import artData from '../../data/artData'
 import popcultureData from '../../data/popcultureData';
 import Score from './../Score/Score.js';
+import NewTimer from '../Timer/Timer'
 import { useSelector } from 'react-redux';
 import './css/playgame.css'
-const PlayGame = () => {
+import { useHistory } from 'react-router-dom'
+
+const PlayGame = ({ expiryTimeStamp }) => {
     const category = useSelector(state => state.category);
+    const history = useHistory()
     // local state of questions to be mapped through
-    const [questions, setQuestions] = useState([]);
+    const [questions, setQuestions] = useState([])
     //
     let questionCards = questions.map((el) => {
         return <Questions question={el}/>
     })
+
     useEffect(() => {
         const fetchHelper = (arr) => {
             debugger
@@ -60,7 +65,7 @@ const PlayGame = () => {
                 </div>
 
                 <div className="timer-div bottom-div"> 
-                    <h1 className="timer-label"> Timer </h1>
+                    <h1 className="timer-label"> <NewTimer expiryTimestamp={expiryTimeStamp}/> </h1>
                 </div>
             </div>
 

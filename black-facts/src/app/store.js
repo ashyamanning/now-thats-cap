@@ -4,6 +4,7 @@ import multiplayerTeamNameReducer from '../../src/features/MenuPage/playerNameSl
 import scoreReducer from '../../src/features/Score/scoreSlice'
 import categoryReducer from '../../src/features/CategoryPage/CategoryStateFolder/categorySlice'
 import loadingReducer from '../features/LoadingSlice/loadingSlice'
+import timerReducer from '../features/Timer/timerSlice'
 import logger from 'redux-logger'
 
 export default configureStore({
@@ -12,7 +13,8 @@ export default configureStore({
     multiplayerTeamNames: multiplayerTeamNameReducer,
     score: scoreReducer,
     category: categoryReducer,
-    loading: loadingReducer
+    loading: loadingReducer,
+    timer: timerReducer
   },
   middleware: [...getDefaultMiddleware(), logger],
 });
