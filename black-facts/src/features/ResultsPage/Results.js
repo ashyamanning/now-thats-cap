@@ -7,7 +7,6 @@ import { useSelector } from 'react-redux'
 import { makeStyles } from "@material-ui/styles";
 import Score from "../Score/Score"
 
-
 export default function Results(props) {
   const score = useSelector(state => state.score);
   const soloPlayerName = useSelector(state => state.soloPlayerName);
