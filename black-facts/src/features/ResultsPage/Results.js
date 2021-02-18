@@ -132,14 +132,14 @@ export default function Results(props) {
         className="confetti-wrap" >
         <Paper elevation={10} className="winner_scores" >
           <div className="display_winners" >
-            <h4 className="winner_score_text">Winner is: soloPlayerName</h4>
+            <h2 className="winner_score_text">WELL DONE {soloPlayerName}!!!</h2>
           </div>
           <div className="display_winners">
-            <h4 className="winner_score_text">Score:
+            <h3 className="winner_score_text">Score:  
              <span className="spanScore">
                 <Score />
               </span>
-            </h4>
+            </h3>
           </div>
         </Paper>
         <div className="buttonDiv row" >
