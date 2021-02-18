@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 export default function Questions({ question }) {
-  const classes = useStyles();
+  // const classes = useStyles();
   const dispatch = useDispatch()
   const [open, setOpen] = React.useState(false);
   const [flip, setFlip] = useState(false)
@@ -65,7 +65,8 @@ export default function Questions({ question }) {
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
-        className={classes.modal}
+        // className={classes.modal}
+        className="modal-container-modal"
         open={open}
         onClose={handleClose}
         closeAfterTransition
@@ -75,10 +76,10 @@ export default function Questions({ question }) {
         }}
       >
         <Fade in={open}>
-          <div className={classes.paper}>
+          <div className="paper-design" /*className={classes.paper}*/ >
               {console.log(question.question)}
-                <h2 id="transition-modal-title">{question.question}</h2>
-                <img src={question.image} width='300px'/>
+                <h2 className="question-styling" id="transition-modal-title">{question.question}</h2>
+                <img className="question-img-styling" src={question.image} width='350px' height="300px"/>
                 <div className='multiple-choice'>
                   {question.options.map((item, i) => {
                     return (
@@ -94,15 +95,17 @@ export default function Questions({ question }) {
                                     checked={selectOption === item}
                                     onClick={handleClick}
                                     />
-                            <label className="form-check-label" for="inlineRadio1">{item}</label>
+                            <div className="style-option-div"> 
+                              <label className="form-check-label option-labels" for="inlineRadio1">{item}</label>
+                            </div>
                           </div>
                         </form>
                       </div>
                     )
                   })}
                 </div>
-                <div type="button" onClick={()=> setFlip(!flip)}>
-                  {flip ? <Answer question={question}/> : <button type="button" onClick={handleSubmit}>Submit</button>}
+                <div className="facts-cap-btn-div" type="button" onClick={()=> setFlip(!flip)}>
+                  {flip ? <Answer question={question}/> : <button className="facts-cap-btn" type="button" onClick={handleSubmit}>Facts or Cap?</button>}
                 </div>
           </div>
         </Fade>
