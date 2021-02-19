@@ -12,6 +12,12 @@
 ### #NowThatsCap: Enter Name or Solo Team name 
 <img src="readmeImages/aboutPlayer.png" width="850px">
 
+### #NowThatsCap: Select From Various Categories
+<img src="readmeImages/startPlay.gif" width="850px">
+
+### #NowThatsCap: Everyone's a Winner 
+<img src="readmeImages/results.gif" width="850px">
+
 This app was built with React.
 Best viewed on Web [Beta Mode: We plan on continuing to build.]
 
