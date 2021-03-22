@@ -25,7 +25,7 @@ const PlayGame = ({ expiryTimeStamp }) => {
 
     useEffect(() => {
         const fetchHelper = (arr) => {
-            debugger
+            // debugger
             const arrCopy = arr.slice(0, 20)
             console.log(arrCopy)
             setQuestions(arrCopy)
