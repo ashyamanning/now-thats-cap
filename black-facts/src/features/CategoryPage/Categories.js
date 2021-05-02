@@ -45,9 +45,9 @@ const Categories = () => {
 
 
     const handleClick = (e) => {
-        debugger
+        // debugger
         dispatch(addCategory(e.currentTarget.value))
-        debugger
+        // debugger
         history.push('/play')
     }
 
